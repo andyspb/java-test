@@ -1,13 +1,16 @@
 package test;
 
-import test.logger.SimpleLogger;
+import java.util.logging.*;
 
 public class Test {
 
-	public static void main(String[] args) {
-		SimpleLogger log = new SimpleLogger();
-		log.Log("From Test !!");
+  private static final Logger log = Logger.getLogger(Test.class.getName());
 
-	}
+
+  public static void main(String[] args) {
+
+    log.log(Level.INFO, "From Test !!");
+
+  }
 
 }
