@@ -1,4 +1,4 @@
-package test.algoritms.linkedlist;
+package test.algorithm.linkedlist;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

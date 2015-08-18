@@ -1,4 +1,4 @@
-package test.algoritms.string;
+package test.algorithm.string;
 
 public class SubstringsOfStringMain {
   public static void main(String args[]) {

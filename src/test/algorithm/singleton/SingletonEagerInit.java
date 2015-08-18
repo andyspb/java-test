@@ -1,4 +1,4 @@
-package algorithm.singleton;
+package test.algorithm.singleton;
 
 public class SingletonEagerInit {
   

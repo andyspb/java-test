@@ -1,8 +1,9 @@
-package algorithm;
+package test.algorithm;
 
 import java.util.concurrent.ForkJoinPool;
-import algorithm.Problem;
-import algorithm.Solver;
+
+import test.algorithm.Problem;
+import test.algorithm.Solver;
 
 public class Test {
 

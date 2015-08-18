@@ -1,4 +1,4 @@
-package algorithm;
+package test.algorithm;
 
 import java.util.Arrays;
 import java.util.concurrent.RecursiveAction;

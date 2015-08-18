@@ -1,4 +1,4 @@
-package algorithm;
+package test.algorithm;
 
 import java.util.Random;
 
