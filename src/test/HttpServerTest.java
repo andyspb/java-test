@@ -14,12 +14,14 @@ public class HttpServerTest {
     HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
     server.createContext("/test", new MyHandler());
     server.setExecutor(null); // creates a default executor
+    System.out.println("Starting server ... ");
     server.start();
   }
 
   static class MyHandler implements HttpHandler {
     @Override
     public void handle(HttpExchange t) throws IOException {
+      System.out.println("Handle request >");
       String response = "This is the response";
       t.sendResponseHeaders(200, response.length());
       OutputStream os = t.getResponseBody();
