@@ -1,5 +1,6 @@
 package test.concurrent;
 
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.logging.Logger;
 
@@ -28,7 +29,8 @@ class RingBuffer {
   private boolean available = false;
 
   RingBuffer() {
-    deque.size();
+    deque = new ArrayDeque<>();
+//    deque = new ArrayDeque<Item>();
   }
   
   synchronized int Size() {
@@ -72,7 +74,7 @@ class Consumer extends Thread {
     int value = 0;
     for (int i = 0; i < 10; i++) {
       value = cubbyhole.get();
-      System.out.println("Consumer #" + this.number + " got: " + value);
+      System.out.println("\t\tConsumer #" + this.number + " got: " + value);
     }
   }
 }
