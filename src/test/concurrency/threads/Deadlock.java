@@ -1,10 +1,17 @@
 package test.concurrency.threads;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 public class Deadlock {
+  private static final Logger log = Logger.getLogger(Deadlock.class.getName());
+ 
   final Object lock1 = new Object();
   final Object lock2 = new Object();
 
   public static void main(String[] args) {
+    log.log(Level.INFO, "Deadlock >>>");
 
     Deadlock d = new Deadlock();
 
@@ -23,13 +30,19 @@ public class Deadlock {
     t1.start();
     t2.start();
 
+    log.log(Level.INFO, "<<<");
   }
 
   void method1() {
     synchronized (lock1) {
       synchronized (lock2) {
         System.out.println("from method1");
-        // doSomething()
+        try {
+          Thread.currentThread().wait();
+        } catch (InterruptedException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+        }
       }
     }
   }
@@ -38,7 +51,12 @@ public class Deadlock {
     synchronized (lock2) {
       synchronized (lock1) {
         System.out.println("from method2");
-        // doSomething()
+        try {
+          Thread.currentThread().wait();
+        } catch (InterruptedException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+        }
       }
     }
   }

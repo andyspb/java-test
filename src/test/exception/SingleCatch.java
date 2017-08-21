@@ -10,6 +10,8 @@ public class SingleCatch {
       if (99 % n == 0) System.out.println(n + " is a factor of 99");
     } catch (NumberFormatException | ArithmeticException ex) {
       System.out.println("Exception encountered " + ex);
+    } finally {
+      scanner.close();
     }
   }
 }

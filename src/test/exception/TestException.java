@@ -1,12 +1,12 @@
 package test.exception;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import test.algorithm.FirstNonRepeated;
-
+@SuppressWarnings("serial")
 public class TestException extends Exception {
 
-  private static final Logger log = Logger.getLogger(FirstNonRepeated.class.getName());
+  private static final Logger log = Logger.getLogger(TestException.class.getName());
 
   public TestException() {
     super("Deafult message for TestException");
@@ -27,7 +27,7 @@ public class TestException extends Exception {
 
   public static void main(String[] args) {
     // TODO Auto-generated method stub
-    log.info("Test exception");
+    log.log(Level.INFO, "Test exception");
     try
     {
       throw new TestException();
