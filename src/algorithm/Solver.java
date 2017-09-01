@@ -5,11 +5,11 @@ import java.util.concurrent.RecursiveAction;
 
 @SuppressWarnings("serial")
 public class Solver extends RecursiveAction {
-  private int[] list;
+  private int[] arr;
   private long result;
 
   public Solver(int[] array) {
-    this.list = array;
+    this.arr = array;
   }
   
   public long getResult() {
@@ -18,12 +18,12 @@ public class Solver extends RecursiveAction {
   
   @Override
   protected void compute() {
-    if (list.length == 1) {
-      result = list[0];
+    if (arr.length == 1) {
+      result = arr[0];
     } else {
-      int midpoint = list.length / 2;
-      int[] l1 = Arrays.copyOfRange(list, 0, midpoint);
-      int[] l2 = Arrays.copyOfRange(list, midpoint, list.length);
+      int midpoint = arr.length / 2;
+      int[] l1 = Arrays.copyOfRange(arr, 0, midpoint);
+      int[] l2 = Arrays.copyOfRange(arr, midpoint, arr.length);
       Solver s1 = new Solver(l1);
       Solver s2 = new Solver(l2);
       forkJoin(s1, s2);
