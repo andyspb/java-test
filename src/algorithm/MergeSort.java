@@ -4,6 +4,17 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class MergeSort {
+  private static final Logger log = Logger.getLogger(MergeSort.class.getName());
+
+  public static void main(String[] args) {
+    log.log(Level.INFO, "From MergeSort");
+    int[] arr = {23,12,11,0,7,3,2};
+    printArray(arr);
+    MergeSort s = new MergeSort();
+    s.sort(arr);
+    printArray(arr);
+  }
+  
   private int[] numbers;
   private int[] helper;
 
@@ -13,25 +24,24 @@ public class MergeSort {
     this.numbers = values;
     number = values.length;
     this.helper = new int[number];
-    mergesort(0, number - 1);
+    mergeSort(0, number - 1);
   }
 
-  private void mergesort(int low, int high) {
+  private void mergeSort(int low, int high) {
     // check if low is smaller than high, if not then the array is sorted
     if (low < high) {
       // Get the index of the element which is in the middle
       int middle = low + (high - low) / 2;
       // Sort the left side of the array
-      mergesort(low, middle);
+      mergeSort(low, middle);
       // Sort the right side of the array
-      mergesort(middle + 1, high);
+      mergeSort(middle + 1, high);
       // Combine them both
       merge(low, middle, high);
     }
   }
 
   private void merge(int low, int middle, int high) {
-
     // Copy both parts into the helper array
     for (int i = low; i <= high; i++) {
       helper[i] = numbers[i];
@@ -60,14 +70,14 @@ public class MergeSort {
     }
     // Since we are sorting in-place any leftover elements from the right side
     // are already at the right position.
-
   }
-
-  private static final Logger log = Logger.getLogger(MergeSort.class.getName());
-
-  public static void main(String[] args) {
-    log.log(Level.INFO, "From MergeSort");
-
+  
+  /* A utility function to print array of size n */
+  static void printArray(int arr[]) {
+    int n = arr.length;
+    for (int i = 0; i < n; ++i)
+      System.out.print(arr[i] + " ");
+    System.out.println();
   }
 
 }

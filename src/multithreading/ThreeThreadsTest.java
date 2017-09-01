@@ -4,10 +4,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class MyThread implements Runnable {
+  private static final Logger log = Logger.getLogger(MyThread.class.getName());
+
   private String name;
   private MyThread thread;
-
-  private static final Logger log = Logger.getLogger(MyThread.class.getName());
 
   public MyThread(String name, MyThread t) {
     this.name = name;
