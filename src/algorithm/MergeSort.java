@@ -10,18 +10,29 @@ public class MergeSort {
   private int[] helper;
   private int number;
 
+  public static void main(String[] args) {
+    log.log(Level.INFO, "From MergeSort");
+    int[] arr = {23,12,11,0,7,3,2};
+    printArray(arr);
+    MergeSort s = new MergeSort();
+    s.sort(arr);
+    printArray(arr);
+  }
+  
+
   public void sort(int[] values) {
     this.numbers = values;
     number = values.length;
     this.helper = new int[number];
-    mergesort(0, number - 1);
+    mergeSort(0, number - 1);
   }
 
-  private void mergesort(int low, int high) {
+  private void mergeSort(int low, int high) {
+    // check if low is smaller than high, if not then the array is sorted
     if (low < high) {
       int middle = low + (high - low) / 2;
-      mergesort(low, middle);
-      mergesort(middle + 1, high);
+      mergeSort(low, middle);
+      mergeSort(middle + 1, high);
       merge(low, middle, high);
     }
   }
@@ -51,7 +62,12 @@ public class MergeSort {
     }
   }
 
-  public static void main(String[] args) {
-    log.log(Level.INFO, "From MergeSort");
+  
+  /* A utility function to print array of size n */
+  static void printArray(int arr[]) {
+    int n = arr.length;
+    for (int i = 0; i < n; ++i)
+      System.out.print(arr[i] + " ");
+    System.out.println();
   }
 }
