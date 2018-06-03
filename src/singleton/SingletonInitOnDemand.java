@@ -1,4 +1,4 @@
-package algorithm;
+package singleton;
 
 public class SingletonInitOnDemand {
   private SingletonInitOnDemand() { }
