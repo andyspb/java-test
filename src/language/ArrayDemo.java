@@ -17,7 +17,7 @@ class ArrayDemo {
     for (Integer val : integer)
       System.out.print(val + " ");
 
-    
+
     System.out.println("\n\nDouble array default values:");
     double dnum[] = new double[5];
     for (double val : dnum)
@@ -28,7 +28,7 @@ class ArrayDemo {
     for (double val : fnum)
       System.out.print(val + " ");
 
-    
+
     System.out.println("\n\nBoolean array default values:");
     boolean bnum[] = new boolean[5];
     for (boolean val : bnum)

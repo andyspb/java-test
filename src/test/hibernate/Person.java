@@ -9,7 +9,8 @@ import javax.persistence.GeneratedValue;
 @Entity
 @Table(name = "person")
 public class Person {
-  @Id @GeneratedValue
+  @Id
+  @GeneratedValue
   @Column(name = "id")
   private int id;
   @Column(name = "first_name")
@@ -22,40 +23,51 @@ public class Person {
   private String city;
 
   public Person() {}
+
   public Person(String fname, String lname, String address, String city) {
-     this.firstName = fname;
-     this.lastName = lname;
-     this.address = address;
-     this.city = city;
+    this.firstName = fname;
+    this.lastName = lname;
+    this.address = address;
+    this.city = city;
   }
+
   public int getId() {
-     return id;
+    return id;
   }
-  public void setId( int id ) {
-     this.id = id;
+
+  public void setId(int id) {
+    this.id = id;
   }
+
   public String getFirstName() {
-     return firstName;
+    return firstName;
   }
-  public void setFirstName( String first_name ) {
-     this.firstName = first_name;
+
+  public void setFirstName(String first_name) {
+    this.firstName = first_name;
   }
+
   public String getLastName() {
-     return lastName;
+    return lastName;
   }
-  public void setLastName( String last_name ) {
-     this.lastName = last_name;
+
+  public void setLastName(String last_name) {
+    this.lastName = last_name;
   }
+
   public String getAddress() {
     return address;
- }
- public void setAddress( String address ) {
+  }
+
+  public void setAddress(String address) {
     this.address = address;
- }
- public String getCity() {
-   return city;
-}
-public void setCity( String city ) {
-   this.city = city;
-}
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
+  }
 }

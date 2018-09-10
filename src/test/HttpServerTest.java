@@ -20,25 +20,25 @@ public class HttpServerTest {
   }
 
   static class TestHandler implements HttpHandler {
-	    @Override
-	    public void handle(HttpExchange t) throws IOException {
-	      System.out.println("Handle request >");
-	      String response = "This is the response";
-	      t.sendResponseHeaders(200, response.length());
-	      OutputStream os = t.getResponseBody();
-	      os.write(response.getBytes());
-	      os.close();
-	    }
-	  }
+    @Override
+    public void handle(HttpExchange t) throws IOException {
+      System.out.println("Handle request >");
+      String response = "This is the response";
+      t.sendResponseHeaders(200, response.length());
+      OutputStream os = t.getResponseBody();
+      os.write(response.getBytes());
+      os.close();
+    }
+  }
   static class Test2Handler implements HttpHandler {
-	    @Override
-	    public void handle(HttpExchange t) throws IOException {
-	      System.out.println("Handle request >");
-	      String response = "This is the response";
-	      t.sendResponseHeaders(200, response.length());
-	      OutputStream os = t.getResponseBody();
-	      os.write(response.getBytes());
-	      os.close();
-	    }
-	  }
+    @Override
+    public void handle(HttpExchange t) throws IOException {
+      System.out.println("Handle request >");
+      String response = "This is the response";
+      t.sendResponseHeaders(200, response.length());
+      OutputStream os = t.getResponseBody();
+      os.write(response.getBytes());
+      os.close();
+    }
+  }
 }

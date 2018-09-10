@@ -18,16 +18,15 @@ public class Stream extends RecursiveAction {
 
   @Override
   protected void compute() {
-    System.out.println("Stream compute() countProcessors="+countProcessors);
+    System.out.println("Stream compute() countProcessors=" + countProcessors);
     if (countProcessors == 1 || end - start <= countLimit) {
-        System.out.println("=run=");
-        for(int i = start; i <= end; i++) {
-            new Calc().go(i);
-        }
+      System.out.println("=run=");
+      for (int i = start; i <= end; i++) {
+        new Calc().go(i);
+      }
     } else {
-        int middle = (start + end)/ 2;
-        invokeAll(new Stream(forSplit, 0, middle),
-                new Stream(forSplit, middle+1, end));
+      int middle = (start + end) / 2;
+      invokeAll(new Stream(forSplit, 0, middle), new Stream(forSplit, middle + 1, end));
     }
   }
 }

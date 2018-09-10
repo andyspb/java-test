@@ -9,9 +9,9 @@ public class InterThreadCommunication {
   private static final Logger log = Logger.getLogger(InterThreadCommunication.class.getName());
 
   public static void main(String args[]) {
-    
+
     log.log(Level.INFO, ">>>");
-    
+
     final Queue<Integer> sharedQ = new LinkedList<Integer>();
 
     Thread producer = new Producer(sharedQ);

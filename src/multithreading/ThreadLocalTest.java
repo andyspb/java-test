@@ -31,6 +31,7 @@ public class ThreadLocalTest<T> {
   }
 }
 
+
 class PerThreadFormatter {
   private static final ThreadLocalTest<SimpleDateFormat> dateFormatHolder =
       new ThreadLocalTest<SimpleDateFormat>() {

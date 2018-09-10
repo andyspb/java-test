@@ -10,7 +10,7 @@ public class WildMaskTest {
     for (Object l : list) {
       System.out.print("{" + l + "} ");
     }
-    
+
     System.out.println();
   }
 

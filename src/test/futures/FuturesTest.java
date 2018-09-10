@@ -20,6 +20,7 @@ public class FuturesTest {
 
   private static final Logger log = Logger.getLogger(FuturesTest.class.getName());
   private static final ExecutorService threadpool = Executors.newFixedThreadPool(3);
+
   /**
    * @param args
    * @throws InterruptedException
@@ -33,7 +34,7 @@ public class FuturesTest {
     System.out.println("Task is submitted");
     while (!future.isDone()) {
       System.out.println("Task is not completed yet....");
-      Thread.sleep(1); //sleep for 1 millisecond before checking again }
+      Thread.sleep(1); // sleep for 1 millisecond before checking again }
     }
 
     System.out.println("Task is completed, let's check result");
@@ -45,15 +46,18 @@ public class FuturesTest {
 
   private static class FactorialCalculator implements Callable {
     private final int number;
+
     public FactorialCalculator(int number) {
       this.number = number;
-      }
-    @Override public Long call() {
+    }
+
+    @Override
+    public Long call() {
       long output = 0;
       try {
         output = factorial(number);
       } catch (InterruptedException ex) {
-          Logger.getLogger(FactorialCalculator.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(FactorialCalculator.class.getName()).log(Level.SEVERE, null, ex);
       }
       return output;
     }

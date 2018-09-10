@@ -45,11 +45,12 @@ public class StartSportCamp {
 
     list.stream().forEachOrdered((p) -> p.append("_new")); // list - содержит [a1_new, a2_new,
                                                            // a3_new]
-    
+
     list.stream().forEach(System.out::println);
-    
-    List<StringBuilder> newList = list.stream().peek((p) -> p.append("_new")).collect(Collectors.toList());
-    
+
+    List<StringBuilder> newList =
+        list.stream().peek((p) -> p.append("_new")).collect(Collectors.toList());
+
 
   }
 

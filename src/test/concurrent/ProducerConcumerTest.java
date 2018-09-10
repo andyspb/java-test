@@ -18,10 +18,12 @@ public class ProducerConcumerTest {
 
 }
 
+
 class Item {
   int data;
   int size;
 }
+
 
 class RingBuffer {
   private int contents;
@@ -30,13 +32,13 @@ class RingBuffer {
 
   RingBuffer() {
     deque = new ArrayDeque<>();
-//    deque = new ArrayDeque<Item>();
+    // deque = new ArrayDeque<Item>();
   }
-  
+
   synchronized int Size() {
     return deque.size();
   }
-  
+
   public synchronized int get() {
     while (available == false) {
       try {

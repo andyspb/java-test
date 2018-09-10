@@ -22,6 +22,7 @@ class MyThread extends Thread {
 
 }
 
+
 public class ThreeThreadsTest {
 
   private static final Logger log = Logger.getLogger(ThreeThreadsTest.class.getName());
@@ -37,15 +38,15 @@ public class ThreeThreadsTest {
     t1.start();
     t2.start();
     t3.start();
-    
+
     try {
       t1.join();
       t2.join();
       t3.join();
     } catch (InterruptedException e) {}
-    
-    
-    
+
+
+
     log.log(Level.INFO, "<<<");
 
   }

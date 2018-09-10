@@ -8,6 +8,7 @@ public class MainChat {
   }
 }
 
+
 class Chat {
   boolean flag = false;
 

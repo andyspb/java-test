@@ -11,8 +11,8 @@ public class Start {
     Long countSum = fjp.invoke(test);
     Long endT = System.nanoTime();
     Long timebetweenStartEnd = endT - beginT;
-    System.out.println("=====time========" + timebetweenStartEnd);
-    System.out.println("=====countSum========" + countSum);
+    System.out.println("time: " + timebetweenStartEnd);
+    System.out.println("countSum: " + countSum);
 
   }
 }

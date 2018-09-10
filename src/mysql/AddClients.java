@@ -16,28 +16,28 @@ public class AddClients {
     ResultSet rs = null;
     Connection connection = null;
     Statement statement = null;
-    
+
     String query = "";
-   
+
     try {
       // The newInstance() call is a work around for some
       // broken Java implementations
       Class.forName("com.mysql.jdbc.Driver").newInstance();
 
       connection = DriverManager.getConnection(URL, USER, PASSWORD);
-      
+
       statement = connection.createStatement();
-      
+
       String[] names = {"vah", "ivan", "olga", "kris"};
       String[] lastnames = {"aar", "nitro", "was", "kas"};
       String[] emails = {"va@gmail.com", "34353453@hotmail.com", "ow@gmail.com", "kk@mail.ru"};
-      
+
       for (int i = 0; i < names.length; ++i) {
-        query = "insert into clients (name, lastname,email) values('" +
-             names[i] +  "', '"+ lastnames[i]+ "','"+ emails[i]+"')";
+        query = "insert into clients (name, lastname,email) values('" + names[i] + "', '"
+            + lastnames[i] + "','" + emails[i] + "')";
         statement.executeUpdate(query);
       }
-      
+
     } catch (Exception ex) {
       // handle any errors
       System.out.println("Exception: " + ex.getMessage());

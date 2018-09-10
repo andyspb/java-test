@@ -8,27 +8,32 @@ import java.util.Queue;
  * a bd c
  */
 
-public class LevelOrder {
-
-  static class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data) {
-      this.data = data;
-      left = null;
-      right = null;
-    }
+class TreeNode {
+  public TreeNode(int data) {
+    this.data = data;
+    this.left = null;
+    this.right = null;
   }
 
+  public int size() {
+    return 1 + (left == null ? 0 : left.size()) + (right == null ? 0 : right.size());
+  }
+
+  public TreeNode left;
+  public TreeNode right;
+  public int data;
+}
+
+
+public class LevelOrder {
+
   // iterative method to do level order traversal line by line
-  static void printLevelOrder(Node root) {
+  static void printLevelOrder(TreeNode root) {
     if (root == null) {
       return;
     }
 
-    Queue<Node> que = new LinkedList<Node>();
+    Queue<TreeNode> que = new LinkedList<TreeNode>();
     que.add(root);
 
     while (true) {
@@ -37,7 +42,7 @@ public class LevelOrder {
         break;
       }
       while (nodeCount > 0) {
-        Node node = que.peek();
+        TreeNode node = que.peek();
         System.out.print(node.data + " ");
         que.remove();
         if (node.left != null) {
@@ -51,23 +56,23 @@ public class LevelOrder {
       System.out.println();
     }
   }
-  
+
   public static void main(String[] args) {
     // Let us create binary tree shown in above diagram
-    //             1
-    //          /     \
-    //         2       3
-    //       /   \       \
-    //      4     5       6
-      
-     Node root = new Node(1);
-     root.left = new Node(2);
-     root.right = new Node(3);
-     root.left.left = new Node(4);
-     root.left.right = new Node(5);
-     root.right.right = new Node(6);
-      
-     printLevelOrder(root);
+    // 1
+    // / \
+    // 2 3
+    // / \ \
+    // 4 5 6
+
+    TreeNode root = new TreeNode(1);
+    root.left = new TreeNode(2);
+    root.right = new TreeNode(3);
+    root.left.left = new TreeNode(4);
+    root.left.right = new TreeNode(5);
+    root.right.right = new TreeNode(6);
+
+    printLevelOrder(root);
   }
 
 }

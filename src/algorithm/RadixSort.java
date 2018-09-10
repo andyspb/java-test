@@ -25,7 +25,7 @@ public class RadixSort {
       countSort(arr, n, exp);
       print(arr);
     }
-    
+
   }
 
   static void countSort(int arr[], int n, int exp) {
@@ -39,7 +39,7 @@ public class RadixSort {
       count[(arr[i] / exp) % 10]++;
     System.out.println("occurrences:");
     print(count);
-    
+
     // Change count[i] so that count[i] now contains
     // actual position of this digit in output[]
     for (i = 1; i < 10; i++)
@@ -50,11 +50,12 @@ public class RadixSort {
 
     // Build the output array
     for (i = n - 1; i >= 0; --i) {
-      System.out.println("arr["+i+"]="+arr[i]);
-      System.out.println("(arr["+i+"] / exp) % 10 -1)="+ (((arr[i]/exp)%10)-1));
-      System.out.println("count[(arr["+i+"] / exp) % 10]-1]="+ (count[(arr[i] / exp) % 10] - 1));
+      System.out.println("arr[" + i + "]=" + arr[i]);
+      System.out.println("(arr[" + i + "] / exp) % 10 -1)=" + (((arr[i] / exp) % 10) - 1));
+      System.out
+          .println("count[(arr[" + i + "] / exp) % 10]-1]=" + (count[(arr[i] / exp) % 10] - 1));
       output[count[(arr[i] / exp) % 10] - 1] = arr[i];
-      System.out.println("count[(arr["+i+ "] / exp) % 10]="+count[(arr[i] / exp) % 10]);
+      System.out.println("count[(arr[" + i + "] / exp) % 10]=" + count[(arr[i] / exp) % 10]);
       --count[(arr[i] / exp) % 10];
     }
 
@@ -72,7 +73,7 @@ public class RadixSort {
   }
 
   static void print(int arr[]) {
-    for (int a: arr)
+    for (int a : arr)
       System.out.print(a + " ");
     System.out.println("");
   }

@@ -8,6 +8,7 @@ class A {
   protected A() {
     i = 2;
   }
+
   private int i;
 
   public int getI() {
@@ -17,8 +18,7 @@ class A {
 }
 
 
-class B extends A {
-}
+class B extends A {}
 
 
 public class PrivateTest {

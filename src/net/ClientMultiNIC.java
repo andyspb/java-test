@@ -8,7 +8,7 @@ public class ClientMultiNIC {
 
   private static final Logger log = Logger.getLogger(ClientMultiNIC.class.getName());
 
-  
+
   public static void main(String args[]) throws Exception {
     log.info(" >>> main() Welcome to Client side");
 

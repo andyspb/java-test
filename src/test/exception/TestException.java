@@ -20,21 +20,17 @@ public class TestException extends Exception {
     super(message, throwable);
   }
 
-  public String getMessage()
-  {
-      return super.getMessage();
+  public String getMessage() {
+    return super.getMessage();
   }
 
   public static void main(String[] args) {
     // TODO Auto-generated method stub
     log.log(Level.INFO, "Test exception");
-    try
-    {
+    try {
       throw new TestException();
-    }
-    catch(Exception ex)
-    {
-        System.out.println("This is my custom exception:" + ex.getMessage());
+    } catch (Exception ex) {
+      System.out.println("This is my custom exception:" + ex.getMessage());
     }
   }
 

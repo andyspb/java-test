@@ -5,11 +5,11 @@ import java.net.*;
 import java.util.logging.Logger;
 
 public class Server {
-  
+
   private static final Logger log = Logger.getLogger(Server.class.getName());
-  
+
   public static void main(String[] args) throws IOException {
-    
+
     log.info(" >>> main() Welcome to Server side");
     Server.run(5000);
   }

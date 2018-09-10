@@ -3,31 +3,38 @@ package algorithm;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BinaryTreeInsertion {
-  static class Node {
-    int key;
-    Node left, right;
-
-    Node(int key) {
-      this.key = key;
-      left = null;
-      right = null;
-    }
+class BTNode {
+  public BTNode(int value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
   }
 
-  static Node root;
-  static Node temp = root;
+  public int size() {
+    return 1 + (left == null ? 0 : left.size()) + (right == null ? 0 : right.size());
+  }
 
-  static void inorder(Node temp) {
+  public BTNode left;
+  public BTNode right;
+  public int value;
+}
+
+
+public class BinaryTreeInsertion {
+
+  static BTNode root;
+  static BTNode temp = root;
+
+  static void inorder(BTNode temp) {
     if (temp == null) return;
 
     inorder(temp.left);
-    System.out.print(temp.key + " ");
+    System.out.print(temp.value + " ");
     inorder(temp.right);
   }
 
-  static void insert(Node temp, int key) {
-    Queue<Node> q = new LinkedList<Node>();
+  static void insert(BTNode temp, int key) {
+    Queue<BTNode> q = new LinkedList<BTNode>();
     q.add(temp);
 
     while (!q.isEmpty()) {
@@ -35,13 +42,13 @@ public class BinaryTreeInsertion {
       q.remove();
 
       if (temp.left == null) {
-        temp.left = new Node(key);
+        temp.left = new BTNode(key);
         break;
       } else
         q.add(temp.left);
 
       if (temp.right == null) {
-        temp.right = new Node(key);
+        temp.right = new BTNode(key);
         break;
       } else
         q.add(temp.right);
@@ -49,12 +56,12 @@ public class BinaryTreeInsertion {
   }
 
   public static void main(String args[]) {
-    root = new Node(10);
-    root.left = new Node(11);
-    root.left.left = new Node(7);
-    root.right = new Node(9);
-    root.right.left = new Node(15);
-    root.right.right = new Node(8);
+    root = new BTNode(10);
+    root.left = new BTNode(11);
+    root.left.left = new BTNode(7);
+    root.right = new BTNode(9);
+    root.right.left = new BTNode(15);
+    root.right.right = new BTNode(8);
 
     System.out.print("Inorder traversal before insertion:");
     inorder(root);

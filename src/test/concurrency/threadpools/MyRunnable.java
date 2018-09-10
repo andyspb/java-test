@@ -4,7 +4,7 @@ package test.concurrency.threadpools;
 
 public class MyRunnable implements Runnable {
   private final long countUtil;
-  
+
   public MyRunnable(long countUtil) {
     this.countUtil = countUtil;
   }
@@ -12,7 +12,7 @@ public class MyRunnable implements Runnable {
   @Override
   public void run() {
     long sum = 0;
-    for (long i = 1; i<countUtil; ++i) {
+    for (long i = 1; i < countUtil; ++i) {
       sum += i;
     }
     System.out.println(sum);

@@ -1,57 +1,68 @@
 package algorithm;
 
+class BTreeNode {
+  int key;
+  BTreeNode left, right;
+
+  public BTreeNode(int key) {
+    this.key = key;
+    left = right = null;
+  }
+}
+
+
+class Distance {
+  int minDis = Integer.MAX_VALUE;
+}
+
 
 public class BinaryTreeClosetLeaf {
-  TreeNode root;
+  BTreeNode root;
 
   public static void main(String[] args) {
     BinaryTreeClosetLeaf tree = new BinaryTreeClosetLeaf();
 
     // Let us create Binary Tree shown in above example
-    tree.root = new TreeNode(1);
-    tree.root.left = new TreeNode(12);
-    tree.root.right = new TreeNode(13);
+    tree.root = new BTreeNode(1);
+    tree.root.left = new BTreeNode(12);
+    tree.root.right = new BTreeNode(13);
 
-    tree.root.right.left = new TreeNode(14);
-    tree.root.right.right = new TreeNode(15);
+    tree.root.right.left = new BTreeNode(14);
+    tree.root.right.right = new BTreeNode(15);
 
-    tree.root.right.left.left = new TreeNode(21);
-    tree.root.right.left.right = new TreeNode(22);
-    tree.root.right.right.left = new TreeNode(23);
-    tree.root.right.right.right = new TreeNode(24);
+    tree.root.right.left.left = new BTreeNode(21);
+    tree.root.right.left.right = new BTreeNode(22);
+    tree.root.right.right.left = new BTreeNode(23);
+    tree.root.right.right.right = new BTreeNode(24);
 
-    tree.root.right.left.left.left = new TreeNode(1);
-    tree.root.right.left.left.right = new TreeNode(2);
-    tree.root.right.left.right.left = new TreeNode(3);
-    tree.root.right.left.right.right = new TreeNode(4);
-    tree.root.right.right.left.left = new TreeNode(5);
-    tree.root.right.right.left.right = new TreeNode(6);
-    tree.root.right.right.right.left = new TreeNode(7);
-    tree.root.right.right.right.right = new TreeNode(8);
+    tree.root.right.left.left.left = new BTreeNode(1);
+    tree.root.right.left.left.right = new BTreeNode(2);
+    tree.root.right.left.right.left = new BTreeNode(3);
+    tree.root.right.left.right.right = new BTreeNode(4);
+    tree.root.right.right.left.left = new BTreeNode(5);
+    tree.root.right.right.left.right = new BTreeNode(6);
+    tree.root.right.right.right.left = new BTreeNode(7);
+    tree.root.right.right.right.right = new BTreeNode(8);
 
-    TreeNode x = tree.root.right;
+    BTreeNode x = tree.root.right;
 
     System.out.println("The closest leaf to node with value " + x.key + " is at a distance of "
         + tree.minimumDistance(tree.root, x));
   }
 
-  void findLeafDown(TreeNode root, int lev, Distance minDist) {
-    if (root == null) 
-      return;
+  void findLeafDown(BTreeNode root, int lev, Distance minDist) {
+    if (root == null) return;
     if (root.left == null && root.right == null) {
-      if (lev < (minDist.minDis)) 
-        minDist.minDis = lev;
+      if (lev < (minDist.minDis)) minDist.minDis = lev;
       return;
     }
     findLeafDown(root.left, lev + 1, minDist);
     findLeafDown(root.right, lev + 1, minDist);
   }
 
-  int findThroughParent(TreeNode root, TreeNode x, Distance minDist) {
-    if (root == null) 
-      return -1;
-    if (root == x) 
-      return 0;
+  int findThroughParent(BTreeNode root, BTreeNode x, Distance minDist) {
+    if (root == null) return -1;
+    if (root == x) return 0;
 
     int l = findThroughParent(root.left, x, minDist);
 
@@ -69,26 +80,11 @@ public class BinaryTreeClosetLeaf {
     return -1;
   }
 
-  int minimumDistance(TreeNode root, TreeNode x) {
+  int minimumDistance(BTreeNode root, BTreeNode x) {
     Distance d = new Distance();
     findLeafDown(x, 0, d);
     findThroughParent(root, x, d);
     return d.minDis;
   }
-}
-
-class TreeNode {
-  int key;
-  TreeNode left, right;
-
-  public TreeNode(int key) {
-    this.key = key;
-    left = right = null;
-  }
-}
-
-
-class Distance {
-  int minDis = Integer.MAX_VALUE;
 }
 

@@ -1,6 +1,6 @@
 package inner;
 
-//Java program to demonstrate how to implement static and non-static classes in a java program.
+// Java program to demonstrate how to implement static and non-static classes in a java program.
 class OuterClass {
   private static String msg = "GeeksForGeeks";
 

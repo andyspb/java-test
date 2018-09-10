@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
   private static final int NTHREDS = 10;
-  
+
   public static void main(String[] args) {
     ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
     for (int i = 0; i < 500; ++i) {
@@ -17,8 +17,7 @@ public class Main {
     // and finish all existing threads in the queue
     executor.shutdown();
     // Wait until all threads are finish
-    while (!executor.isTerminated()) {
-    }
+    while (!executor.isTerminated()) {}
     try {
       executor.awaitTermination(1, TimeUnit.NANOSECONDS);
     } catch (InterruptedException e) {

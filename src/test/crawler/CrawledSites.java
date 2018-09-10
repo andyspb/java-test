@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Data structure for a web crawler. Keeps track of the visited sites and keeps
- * a list of sites which needs still to be crawled.
+ * Data structure for a web crawler. Keeps track of the visited sites and keeps a list of sites
+ * which needs still to be crawled.
  * 
  * @author andy
  *
@@ -17,7 +17,7 @@ public class CrawledSites {
 
   private List<String> crawledSites = new ArrayList<String>();
   private List<String> linkedSites = new ArrayList<String>();
-  
+
   public void add(String site) {
     synchronized (this) {
       if (!crawledSites.contains(site)) {
@@ -25,9 +25,9 @@ public class CrawledSites {
       }
     }
   }
-  
+
   public String next() {
-    if (linkedSites.size() == 0 ) {
+    if (linkedSites.size() == 0) {
       return null;
     }
     synchronized (this) {
@@ -40,7 +40,7 @@ public class CrawledSites {
       return null;
     }
   }
-  
+
   /**
    * @param args
    */

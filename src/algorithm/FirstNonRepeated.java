@@ -10,7 +10,7 @@ public class FirstNonRepeated {
 
   public static void main(String[] args) {
     String str = "This is a test string";
-    log.log(Level.INFO,"find first non-repeated character in :" + str);
+    log.log(Level.INFO, "find first non-repeated character in :" + str);
     char c = firstNonRepeatedCharacter(str);
     log.info("c :" + c);
   }

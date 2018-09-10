@@ -12,13 +12,13 @@ public class MergeSort {
 
   public static void main(String[] args) {
     log.log(Level.INFO, "From MergeSort >>> ");
-    int[] arr = {23,12,11,0,7,3,2};
-    
+    int[] arr = {23, 12, 11, 0, 7, 3, 2};
+
     printArray(arr);
     new MergeSort().sort(arr);
     printArray(arr);
   }
-  
+
 
   public void sort(int[] values) {
     this.arr = values;
@@ -42,7 +42,7 @@ public class MergeSort {
       temp[i] = arr[i];
     }
 
-    int i = low, k = low, j = mid + 1 ;
+    int i = low, k = low, j = mid + 1;
     while (i <= mid && j <= high) {
       if (temp[i] <= temp[j]) {
         arr[k] = temp[i];
@@ -60,7 +60,7 @@ public class MergeSort {
     }
   }
 
-  
+
   static void printArray(int arr[]) {
     int n = arr.length;
     for (int i = 0; i < n; ++i)

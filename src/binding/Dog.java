@@ -6,7 +6,7 @@ class Animal {
   }
 
   String[] arr1;
-  String []arr2;
+  String[] arr2;
   String arr3[];
 }
 
@@ -17,9 +17,9 @@ class Dog extends Animal {
   }
 
   static void method(Animal a) {
-    if(a instanceof Dog){
-       Dog d=(Dog)a;//downcasting
-       System.out.println("ok downcasting performed");
+    if (a instanceof Dog) {
+      Dog d = (Dog) a;// downcasting
+      System.out.println("ok downcasting performed");
     }
   }
 

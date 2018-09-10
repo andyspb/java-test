@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 public class Deadlock {
   private static final Logger log = Logger.getLogger(Deadlock.class.getName());
- 
+
   final Object lock1 = new Object();
   final Object lock2 = new Object();
 

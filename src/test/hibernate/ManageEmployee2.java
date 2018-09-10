@@ -33,9 +33,9 @@ public class ManageEmployee2 {
       throw new ExceptionInInitializerError(ex);
     }
     ManageEmployee2 ME2 = new ManageEmployee2();
-    
+
     ME2.deleteAllEmployees();
-    
+
     /* Add few employee records in database */
     Integer empID1 = ME2.addEmployee("Zara", "Ali", randomSalary());
     Integer empID2 = ME2.addEmployee("Daisy", "Das", randomSalary());

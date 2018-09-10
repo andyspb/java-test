@@ -6,33 +6,43 @@ import java.io.OutputStreamWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import common.Node;
 import test.threads.Deadlock;
+
+class ListNode {
+  public ListNode(int data) {
+    this.data = data;
+    this.next = null;
+  }
+
+  public ListNode next;
+  public int data;
+}
+
 
 public class ReverseLinkedList {
   private static final Logger log = Logger.getLogger(Deadlock.class.getName());
 
-  public static void printList(Node node) throws IOException {
-    if (node == null) {
+  public static void printList(ListNode ListNode) throws IOException {
+    if (ListNode == null) {
       return;
     }
 
     BufferedWriter log = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    while (node != null) {
-      log.write(node.toString());
+    while (ListNode != null) {
+      log.write(ListNode.toString());
       log.write(' ');
-      node = node.next;
+      ListNode = ListNode.next;
     }
     log.write('\n');
     log.flush();
   }
 
-  public static Node reverseListIter(Node head) {
+  public static ListNode reverseListIter(ListNode head) {
     if (head == null || head.next == null) return head;
 
-    Node prev = null;
-    Node next = null;
+    ListNode prev = null;
+    ListNode next = null;
     while (head != null) {
       next = head.next;
       head.next = prev;
@@ -43,10 +53,10 @@ public class ReverseLinkedList {
 
   }
 
-  public static Node reverseListRec(Node head) {
+  public static ListNode reverseListRec(ListNode head) {
     if (head == null || head.next == null) return head;
 
-    Node remaining = reverseListRec(head.next);
+    ListNode remaining = reverseListRec(head.next);
 
     System.out.println("head:" + head);
     System.out.println("remaining:" + remaining);
@@ -61,14 +71,14 @@ public class ReverseLinkedList {
 
   public static void main(String[] args) throws IOException {
     log.log(Level.INFO, ">>>");
-    Node n0 = new Node(0);
-    Node n1 = new Node(1);
+    ListNode n0 = new ListNode(0);
+    ListNode n1 = new ListNode(1);
     n0.next = n1;
-    Node n2 = new Node(2);
+    ListNode n2 = new ListNode(2);
     n1.next = n2;
-    Node n3 = new Node(3);
+    ListNode n3 = new ListNode(3);
     n2.next = n3;
-    Node n4 = new Node(4);
+    ListNode n4 = new ListNode(4);
     n3.next = n4;
 
     printList(n0);

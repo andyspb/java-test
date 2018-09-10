@@ -64,8 +64,8 @@ public class Deadlock {
     t1.start();
     t2.start();
 
-  
-    
+
+
     try {
       Thread.currentThread().join();
     } catch (InterruptedException e) {

@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
 
 public class CallableFutures {
   private static final int NTHREDS = 10;
-    
+
   public static void main(String[] args) {
     ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
     List<Future<Long>> list = new ArrayList<Future<Long>>();
@@ -20,24 +20,24 @@ public class CallableFutures {
       Future<Long> submit = executor.submit(worker);
       list.add(submit);
     }
-    
+
     long sum = 0;
     System.out.println(list.size());
-    
+
     // retrieve results
-    for (Future<Long> future: list) {
+    for (Future<Long> future : list) {
       try {
-        sum+= future.get();
+        sum += future.get();
       } catch (InterruptedException e) {
         e.printStackTrace();
       } catch (ExecutionException e) {
         e.printStackTrace();
       }
     }
-    
+
     System.out.println(sum);
     executor.shutdown();
-    
-  } 
-  
+
+  }
+
 }

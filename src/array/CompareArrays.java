@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 public class CompareArrays {
 
   private static final Logger log = Logger.getLogger(CompareArrays.class.getName());
-  
+
   public static void main(String[] args) {
     log.info("Test compare arrays");
     int arr1[] = {1, 2, 3};
