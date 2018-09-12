@@ -2,11 +2,11 @@ package algorithm;
 
 public class ReverseStringOld {
   public static void main(String[] args) {
-    String input = "GeeksforGeeks";
+    String inputStr = "GeeksforGeeks";
 
-    System.out.println(input);
+    System.out.println(inputStr);
 
-    char[] arr = input.toCharArray();
+    char[] arr = inputStr.toCharArray();
 
     int len = arr.length;
 
