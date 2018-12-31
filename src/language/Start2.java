@@ -8,7 +8,7 @@ public class Start2 {
     Long beginT = System.nanoTime();
     ForkJoinPool fjp = new ForkJoinPool();
     Stream test = new Stream(componentValue, 0, componentValue);
-    Long countSum = fjp.invoke(test);
+    Void countSum = fjp.invoke(test);
     Long endT = System.nanoTime();
     Long timebetweenStartEnd = endT - beginT;
     System.out.println("time: " + timebetweenStartEnd);

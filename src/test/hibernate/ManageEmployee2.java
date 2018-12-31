@@ -1,20 +1,16 @@
 package test.hibernate;
 
-import java.util.List;
-import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-
-import test.futures.FuturesTest;
-
-import org.hibernate.SessionFactory;
 
 public class ManageEmployee2 {
   private static SessionFactory factory;
@@ -25,9 +21,7 @@ public class ManageEmployee2 {
   public static void main(String[] args) {
     log.log(Level.INFO, ">>> ManageEmployee2.main()");
     try {
-      factory = new Configuration().configure().
-      // addPackage("com.xyz") //add package if used.
-          addAnnotatedClass(Employee.class).buildSessionFactory();
+      factory = new Configuration().configure().buildSessionFactory();
     } catch (Throwable ex) {
       System.err.println("Failed to create sessionFactory object." + ex);
       throw new ExceptionInInitializerError(ex);

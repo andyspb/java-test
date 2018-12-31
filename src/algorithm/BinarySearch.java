@@ -25,6 +25,7 @@ public class BinarySearch {
 
   // Driver method to test above
   public static void main(String args[]) {
+    System.out.println("BinarySearch.main() >>>");
     BinarySearch bs = new BinarySearch();
     int arr[] = {2, 3, 4, 10, 40};
     int n = arr.length;

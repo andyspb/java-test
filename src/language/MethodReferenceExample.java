@@ -1,11 +1,11 @@
 package language;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MethodReferenceExample {
   public static void main(String args[]) {
-    List names = new ArrayList();
+    List<String> names = new ArrayList<String>();
 
     names.add("Mahesh");
     names.add("Suresh");

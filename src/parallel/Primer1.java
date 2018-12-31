@@ -5,7 +5,7 @@ import java.util.Optional;
 
 public class Primer1 {
   public static void main(String[] args) {
-    ArrayList<Integer> testValues = new ArrayList();
+    ArrayList<Integer> testValues = new ArrayList<Integer>();
     testValues.add(0, 15);
     testValues.add(1, 1);
     testValues.add(2, 2);

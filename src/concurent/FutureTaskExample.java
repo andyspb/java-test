@@ -13,8 +13,8 @@ public class FutureTaskExample {
     MyCallable callable1 = new MyCallable(1000);
     MyCallable callable2 = new MyCallable(2000);
 
-    FutureTask<String> ft1 = new FutureTask<String>(callable1);
-    FutureTask<String> ft2 = new FutureTask<String>(callable2);
+    FutureTask<Long> ft1 = new FutureTask<Long>(callable1);
+    FutureTask<Long> ft2 = new FutureTask<Long>(callable2);
 
     ExecutorService executor = Executors.newFixedThreadPool(2);
 
@@ -33,7 +33,7 @@ public class FutureTaskExample {
           System.out.println("ft1 result: " + ft1.get());
         }
         System.out.println("Waiting for ft2");
-        String s = ft2.get(200L, TimeUnit.MICROSECONDS);
+        Long s = ft2.get(200L, TimeUnit.MICROSECONDS);
         if (s != null) {
           System.out.println("ft2 result: " + s);
         }

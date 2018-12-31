@@ -3,6 +3,11 @@ package concurent;
 import java.util.concurrent.Callable;
 
 public class MyCallable implements Callable<Long> {
+
+  public MyCallable(long l) {
+
+  }
+
   @Override
   public Long call() throws Exception {
     long sum = 0;

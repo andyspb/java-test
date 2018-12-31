@@ -10,11 +10,12 @@ public class Stream extends RecursiveAction {
   int forSplit;
 
   Stream(int componentValue, int startNumber, int endNumber) {
-    forSplit = componentVa - lue;
+    forSplit = componentValue;
     start = startNumber;
     end = endNumber;
   }
 
+  @Override
   protected void compute() {
     Long countSum = 0L;
     if (countProcessors == 1 || end - start <= countLimit) {
@@ -33,7 +34,7 @@ public class Stream extends RecursiveAction {
       Stream goVar2 = new Stream(forSplit, middle, end);
       goVar1.fork();
       goVar2.fork();
-      countSum = goVar1.join() + goVar2.join();
+      // countSum = goVar1.join() + goVar2.join();
     }
   }
 }

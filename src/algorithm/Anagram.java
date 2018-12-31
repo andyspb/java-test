@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Anagram {
+public abstract class Anagram {
+
+  public abstract void test();
 
   private static final Logger log = Logger.getLogger(Anagram.class.getName());
 

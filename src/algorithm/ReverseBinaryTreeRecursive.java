@@ -1,17 +1,17 @@
 package algorithm;
 
-class BTNode<T> {
-  T value;
-  BTNode<?> left;
-  BTNode<?> rigth;
-  
-  public BTNode<T>(T value) {
-    this.value = value;
-    
-  }
-  
-  
-}
+//class BTNode<T> {
+//
+//  T value;
+//  BTNode<?> left;
+//  BTNode<?> rigth;
+//
+//  public BTNode<T>(T value)  {
+//
+//  }
+//
+//
+//}
 
 
 public class ReverseBinaryTreeRecursive {
