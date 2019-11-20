@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 /*
  * Given a binary tree, print the nodes out grouping by level a / \ b d c
- * 
+ *
  * a bd c
  */
 
@@ -23,7 +23,6 @@ class TreeNode {
   public TreeNode right;
   public int data;
 }
-
 
 public class LevelOrder {
 
@@ -74,5 +73,4 @@ public class LevelOrder {
 
     printLevelOrder(root);
   }
-
 }

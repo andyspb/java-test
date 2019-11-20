@@ -13,7 +13,7 @@ public class FibonacciTest {
   public static void main(String[] args) {
     System.out.println("Fibonacci test:");
 
-    for (int n = 0; n <= 100; ++n) {
+    for (int n = 0; n <= 10; ++n) {
       int member = fib(n);
       System.out.println(" fib(" + n + "):" + member);
 
