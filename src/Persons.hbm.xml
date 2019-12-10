@@ -4,16 +4,16 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-   <class name="test.hibernate.Persons" table="Persons">
-      <meta attribute="class-description">
-         This class contains the Persons details
-      </meta>
-      <id name="id" type="int" column="id">
-         <generator class="native"/>
-      </id>
-      <property name="firstName" column="first_name" type="string"/>
-      <property name="lastName" column="last_name" type="string"/>
-      <property name="address" column="address" type="string"/>
-      <property name="city" column="city" type="string"/>
+   <class name="com.test.hibernate.Persons" table="Persons">
+       <meta attribute="class-description">
+           This class contains the Persons details
+       </meta>
+       <id name="id" type="int" column="id">
+           <generator class="native"/>
+       </id>
+       <property name="firstName" column="first_name" type="string"/>
+       <property name="lastName" column="last_name" type="string"/>
+       <property name="address" column="address" type="string"/>
+       <property name="city" column="city" type="string"/>
    </class>
 </hibernate-mapping>
