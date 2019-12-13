@@ -11,5 +11,15 @@ C:/work/java-test/src/hibernate.cfg.xml</remarks>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost/test</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="config:hibernate.cfg.xml/Hibernate" uuid="8bc64e4c-75ac-4705-ab23-8d84908ce70b">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/work/java-test/config/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/test</jdbc-url>
+    </data-source>
   </component>
 </project>
