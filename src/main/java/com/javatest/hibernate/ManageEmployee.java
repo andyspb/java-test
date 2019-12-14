@@ -5,16 +5,28 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.util.List;
 
 @SuppressWarnings(value = "deprecation")
 public class ManageEmployee {
   private static SessionFactory factory;
+  private static SessionFactory sessionFactory;
+  private static ServiceRegistry serviceRegistry;
+
+  private static SessionFactory configureSessionFactory() throws HibernateException {
+    Configuration configuration = new Configuration();
+    configuration.configure();
+    serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
+    sessionFactory = configuration.buildSessionFactory();
+    return sessionFactory;
+  }
 
   public static void main(String[] args) {
     try {
-      factory = new Configuration().configure().buildSessionFactory();
+      factory = configureSessionFactory();
     } catch (Throwable ex) {
       System.err.println("Failed to create sessionFactory object." + ex);
       throw new ExceptionInInitializerError(ex);
@@ -22,35 +34,35 @@ public class ManageEmployee {
     ManageEmployee ME = new ManageEmployee();
 
     /* Add few employee records in database */
-    Integer empID1 = ME.addEmployee("Zara", "Ali", 1000);
-    Integer empID2 = ME.addEmployee("Daisy", "Das", 5000);
-    Integer empID3 = ME.addEmployee("John", "Paul", 10000);
+    Integer empID1 = ME.addCustomer("Zara", "Ali", 1000);
+    Integer empID2 = ME.addCustomer("Daisy", "Das", 5000);
+    Integer empID3 = ME.addCustomer("John", "Paul", 10000);
 
     /* List down all the employees */
-    ME.listEmployees();
+    ME.listCustomers();
 
     /* Update employee's records */
-    ME.updateEmployee(empID1, "Test");
+    ME.updateCustomer(empID1, "Test");
 
     /* Delete an employee from the database */
     ME.deleteEmployee(empID2);
 
     /* List down new list of the employees */
-    ME.listEmployees();
+    ME.listCustomers();
   }
 
   /* Method to CREATE an employee in the database */
-  private Integer addEmployee(String fname, String lname, int salary) {
+  private Integer addCustomer(String fname, String lname, int salary) {
     Session session = factory.openSession();
-    Transaction tx = null;
+    Transaction transaction = null;
     Integer id = null;
     try {
-      tx = session.beginTransaction();
+      transaction = session.beginTransaction();
       Customer customer = new Customer(fname, lname);
       id = (Integer) session.save(customer);
-      tx.commit();
+      transaction.commit();
     } catch (HibernateException e) {
-      if (tx != null) tx.rollback();
+      if (transaction != null) transaction.rollback();
       e.printStackTrace();
     } finally {
       session.close();
@@ -59,16 +71,16 @@ public class ManageEmployee {
   }
 
   /* Method to READ all the employees */
-  private void listEmployees() {
+  private void listCustomers() {
     Session session = factory.openSession();
     Transaction tx = null;
     try {
       tx = session.beginTransaction();
-      List employees = session.createQuery("FROM Customer").list();
-      for (Object employee1 : employees) {
-        Customer employee = (Customer) employee1;
-        System.out.print("First Name: " + employee.getFirstName());
-        System.out.println("  Last Name: " + employee.getLastName());
+      List customers = session.createQuery("FROM Customer").list();
+      for (Object obj : customers) {
+        Customer customer = (Customer) obj;
+        System.out.print("First Name: " + customer.getFirstName());
+        System.out.println("  Last Name: " + customer.getLastName());
       }
       tx.commit();
     } catch (HibernateException e) {
@@ -80,14 +92,14 @@ public class ManageEmployee {
   }
 
   /* Method to UPDATE salary for an employee */
-  private void updateEmployee(Integer EmployeeID, String lastName) {
+  private void updateCustomer(Integer EmployeeID, String lastName) {
     Session session = factory.openSession();
     Transaction tx = null;
     try {
       tx = session.beginTransaction();
-      Customer employee = (Customer) session.get(Customer.class, EmployeeID);
-      employee.setLastName(lastName);
-      session.update(employee);
+      Customer customer = (Customer) session.get(Customer.class, EmployeeID);
+      customer.setLastName(lastName);
+      session.update(customer);
       tx.commit();
     } catch (HibernateException e) {
       if (tx != null) tx.rollback();
