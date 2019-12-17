@@ -2,197 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c59458-bffa-4bb3-9fc0-733e9bf60978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_25_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_25_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_25_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_5_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/customer.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/order.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/algorithm/NumOfWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/Alien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/AlienName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/language/ClassLoaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Jackrabbit.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SWT_3232m.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/WinService.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/activation.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/antlr.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/aopalliance-repackaged-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/apache-mime4j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/aws-java-sdk-1.10.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/aws-java-sdk-1.11.65.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/c3p0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cdi-api-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/com.springsource.org.aopalliance-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-chain.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-codec.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-collections.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-compress-1.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-configuration-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-configuration.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-digester.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-email-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-fileupload.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-httpclient.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-io.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-lang.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-math.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-net.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-pool.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-validator.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dom4j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/el-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/elki.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/esignal-jstandard-dbcjna.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/esignal-jstandard.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gson-2.2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/guava-15.0-rc1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/h2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hibernate.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hibernate/antlr.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hibernate/c3p0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hibernate/dom4j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hibernate/hibernate-core-4.2.4.final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hibernate/hibernate.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hibernate/javassist.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hk2-api-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hk2-locator-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hk2-utils-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/http-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/httpclient-cache.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/httpclient-win.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/httpclient.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/httpcore.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/httpmime.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/itextpdf-5.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-annotations-2.6.0-rc1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-core-2.6.0-rc1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jackson-databind-2.6.0-rc1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jakarta-oro-2.0.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javabuilder.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javassist-3.22.0-CR2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javassist.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.annotation-api-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.inject-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.inject-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.json-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.json-api-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.json.bind-api-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.servlet-api-3.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.ws.rs-api-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jaxb-api-2.2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jcl-over-slf4j-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jcommon.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-common.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-container-servlet-core.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-container-servlet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-hk2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-media-jaxb.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-media-json-binding.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-media-sse.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jersey-server.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jfreechart-swt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jfreechart.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jna-3.2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/joda-time.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jsch-0.1.53.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jsr250-api-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jta.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/log4j-over-slf4j-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/log4j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mail.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mchange-commons-0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mongo-java-driver-2.11.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-3.1.12-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/net.sf.paperclips_1.0.4.200908120926.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ojdbc14.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.core.commands.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.equinox.common.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.jface.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/org.osgi.core-4.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/osgi-over-slf4j-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/paypal-core-1.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pdfbox-app-1.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/persistence-api-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/platform-3.2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/poi.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/quartz.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rest-api-sdk-0.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sardine.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/servlet-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-android-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-jcl-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-jdk14-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-log4j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-log4j12-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j-simple-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slf4j.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-aop-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-aop.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-aspects-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-beans-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-beans.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-context-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-context-support-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-context-support.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-context.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-core-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-core.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-expression-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-expression.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-instrument-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-instrument-tomcat-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-jdbc-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-jms-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-messaging-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-orm-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-oxm-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-test-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-tx-4.3.18.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-web.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-webmvc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/swing2swt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/swt-grouplayout.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/swt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/swt.jr-orig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/swt.jxr.1.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/truezip-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/yasson-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/ManageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/ManageEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,13 +133,13 @@
       <recent name="C:\work\java-test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManageEmployee">
-    <configuration name="CountDownDriver2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.com.concurent.CountDownDriver2" />
+  <component name="RunManager" selected="Application.NumOfWords">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javatest.hibernate.App" />
       <module name="java-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.com.concurent.*" />
+          <option name="PATTERN" value="com.javatest.hibernate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -330,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HbernateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.com.hibernate.HbernateDemo" />
+    <configuration name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javatest.language.ClassLoaderTest" />
       <module name="java-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.com.hibernate.*" />
+          <option name="PATTERN" value="com.javatest.language.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -356,11 +173,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AtomicExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumOfWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javatest.algorithm.NumOfWords" />
       <module name="java-test" />
-      <option name="PACKAGE_NAME" value="com.javatest" />
-      <option name="MAIN_CLASS_NAME" value="com.javatest.AtomicExampleTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javatest.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -383,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumOfWords" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.ClassLoaderTest" />
         <item itemvalue="Application.ManageEmployee" />
         <item itemvalue="JUnit.AtomicExampleTest.testUpdate" />
-        <item itemvalue="JUnit.AtomicExampleTest" />
-        <item itemvalue="Application.HbernateDemo" />
-        <item itemvalue="Application.CountDownDriver2" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +257,11 @@
       <workItem from="1576151607482" duration="9108000" />
       <workItem from="1576171023887" duration="1464000" />
       <workItem from="1576228876196" duration="4544000" />
-      <workItem from="1576320324207" duration="967000" />
+      <workItem from="1576320324207" duration="2179000" />
+      <workItem from="1576480933872" duration="1246000" />
+      <workItem from="1576488496538" duration="1237000" />
+      <workItem from="1576507689321" duration="599000" />
+      <workItem from="1576568415244" duration="5220000" />
     </task>
     <task id="LOCAL-00001" summary="Fixes for idea project">
       <created>1574255258002</created>
@@ -459,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576234041834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Package Refactoring">
+      <created>1576321298300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576321298300</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,10 +336,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576171168652" />
-    <state x="752" y="178" key="#com.intellij.ide.util.MemberChooser" timestamp="1576157889195">
+    <state x="752" y="178" key="#com.intellij.ide.util.MemberChooser" timestamp="1576571223391">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="752" y="178" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576157889195" />
+    <state x="752" y="178" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576571223391" />
     <state x="545" y="155" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1576168528822">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -524,30 +356,30 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="763" y="434" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576170099602" />
-    <state x="353" y="65" key="CommitChangelistDialog2" timestamp="1576234039339">
+    <state x="353" y="65" key="CommitChangelistDialog2" timestamp="1576321296300">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="353" y="65" key="CommitChangelistDialog2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576234039339" />
+    <state x="353" y="65" key="CommitChangelistDialog2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576321296300" />
     <state x="720" y="94" key="FileChooserDialogImpl" timestamp="1575834845513">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="720" y="94" key="FileChooserDialogImpl/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1575834845513" />
-    <state width="1803" height="318" key="GridCell.Tab.0.bottom" timestamp="1576240544451">
+    <state width="1803" height="318" key="GridCell.Tab.0.bottom" timestamp="1576574456379">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.bottom/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576240544451" />
-    <state width="1803" height="318" key="GridCell.Tab.0.center" timestamp="1576240544451">
+    <state width="1803" height="318" key="GridCell.Tab.0.bottom/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
+    <state width="1803" height="318" key="GridCell.Tab.0.center" timestamp="1576574456379">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.center/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576240544451" />
-    <state width="1803" height="318" key="GridCell.Tab.0.left" timestamp="1576240544451">
+    <state width="1803" height="318" key="GridCell.Tab.0.center/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
+    <state width="1803" height="318" key="GridCell.Tab.0.left" timestamp="1576574456379">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.left/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576240544451" />
-    <state width="1803" height="318" key="GridCell.Tab.0.right" timestamp="1576240544451">
+    <state width="1803" height="318" key="GridCell.Tab.0.left/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
+    <state width="1803" height="318" key="GridCell.Tab.0.right" timestamp="1576574456379">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.right/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576240544451" />
+    <state width="1803" height="318" key="GridCell.Tab.0.right/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
     <state width="1803" height="339" key="GridCell.Tab.1.bottom" timestamp="1576171000010">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -572,10 +404,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="343" y="9" key="SettingsEditor/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576081286564" />
-    <state x="483" y="207" key="Vcs.Push.Dialog.v2" timestamp="1575971751767">
+    <state x="483" y="207" key="Vcs.Push.Dialog.v2" timestamp="1576321304367">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="483" y="207" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1575971751767" />
+    <state x="483" y="207" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576321304367" />
     <state x="644" y="421" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576152283504">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -588,6 +420,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="261" y="66" width="1459" height="697" key="new project wizard/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1575972700608" />
+    <state x="673" y="90" key="refactoring.ChangeSignatureDialog" timestamp="1576571225419">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="673" y="90" key="refactoring.ChangeSignatureDialog/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576571225419" />
     <state x="671" y="155" key="spring file set editor" timestamp="1575831256335">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
