@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c59458-bffa-4bb3-9fc0-733e9bf60978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/algorithm/NumOfWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/Alien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/AlienName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/hibernate/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/language/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javatest/algorithm/ToeplitzMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leet/ThreeSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leet/ThreeSumClosest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leet/TwoSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leet/resursion/PascalTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leet/resursion/ReverseString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,13 +132,13 @@
       <recent name="C:\work\java-test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumOfWords">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javatest.hibernate.App" />
+  <component name="RunManager" selected="Application.ThreeSumClosest">
+    <configuration name="PascalTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leet.resursion.PascalTriangle" />
       <module name="java-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatest.hibernate.*" />
+          <option name="PATTERN" value="com.leet.resursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javatest.language.ClassLoaderTest" />
+    <configuration name="ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leet.resursion.ReverseString" />
       <module name="java-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatest.language.*" />
+          <option name="PATTERN" value="com.leet.resursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManageEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javatest.hibernate.ManageEmployee" />
+    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leet.ThreeSum" />
       <module name="java-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatest.hibernate.*" />
+          <option name="PATTERN" value="com.leet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,12 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumOfWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javatest.algorithm.NumOfWords" />
+    <configuration name="ThreeSumClosest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leet.ThreeSumClosest" />
       <module name="java-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatest.algorithm.*" />
+          <option name="PATTERN" value="com.leet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,29 +185,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AtomicExampleTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leet.TwoSum" />
       <module name="java-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="com.leet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatest" />
-      <option name="MAIN_CLASS_NAME" value="com.javatest.AtomicExampleTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumOfWords" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.ClassLoaderTest" />
-        <item itemvalue="Application.ManageEmployee" />
-        <item itemvalue="JUnit.AtomicExampleTest.testUpdate" />
+        <item itemvalue="Application.ThreeSumClosest" />
+        <item itemvalue="Application.PascalTriangle" />
+        <item itemvalue="Application.ThreeSum" />
+        <item itemvalue="Application.TwoSum" />
+        <item itemvalue="Application.ReverseString" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +257,13 @@
       <workItem from="1576480933872" duration="1246000" />
       <workItem from="1576488496538" duration="1237000" />
       <workItem from="1576507689321" duration="599000" />
-      <workItem from="1576568415244" duration="5220000" />
+      <workItem from="1576568415244" duration="6444000" />
+      <workItem from="1576688254122" duration="1967000" />
+      <workItem from="1576739454052" duration="1198000" />
+      <workItem from="1576755029359" duration="667000" />
+      <workItem from="1576833889057" duration="1198000" />
+      <workItem from="1576920639705" duration="3730000" />
+      <workItem from="1576935129754" duration="4369000" />
     </task>
     <task id="LOCAL-00001" summary="Fixes for idea project">
       <created>1574255258002</created>
@@ -291,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576321298300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Hibernate tests added.">
+      <created>1576574484994</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576574484994</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +324,8 @@
     <MESSAGE value="Fixes for idea project" />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Package Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Package Refactoring" />
+    <MESSAGE value="Hibernate tests added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate tests added." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -356,46 +366,46 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="763" y="434" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576170099602" />
-    <state x="353" y="65" key="CommitChangelistDialog2" timestamp="1576321296300">
+    <state x="353" y="65" key="CommitChangelistDialog2" timestamp="1576574484268">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="353" y="65" key="CommitChangelistDialog2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576321296300" />
+    <state x="353" y="65" key="CommitChangelistDialog2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574484268" />
     <state x="720" y="94" key="FileChooserDialogImpl" timestamp="1575834845513">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="720" y="94" key="FileChooserDialogImpl/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1575834845513" />
-    <state width="1803" height="318" key="GridCell.Tab.0.bottom" timestamp="1576574456379">
+    <state width="1803" height="254" key="GridCell.Tab.0.bottom" timestamp="1576943028774">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.bottom/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
-    <state width="1803" height="318" key="GridCell.Tab.0.center" timestamp="1576574456379">
+    <state width="1803" height="254" key="GridCell.Tab.0.bottom/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576943028774" />
+    <state width="1803" height="254" key="GridCell.Tab.0.center" timestamp="1576943028774">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.center/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
-    <state width="1803" height="318" key="GridCell.Tab.0.left" timestamp="1576574456379">
+    <state width="1803" height="254" key="GridCell.Tab.0.center/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576943028774" />
+    <state width="1803" height="254" key="GridCell.Tab.0.left" timestamp="1576943028774">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.left/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
-    <state width="1803" height="318" key="GridCell.Tab.0.right" timestamp="1576574456379">
+    <state width="1803" height="254" key="GridCell.Tab.0.left/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576943028774" />
+    <state width="1803" height="254" key="GridCell.Tab.0.right" timestamp="1576943028774">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="318" key="GridCell.Tab.0.right/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574456379" />
-    <state width="1803" height="339" key="GridCell.Tab.1.bottom" timestamp="1576171000010">
+    <state width="1803" height="254" key="GridCell.Tab.0.right/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576943028774" />
+    <state width="1803" height="339" key="GridCell.Tab.1.bottom" timestamp="1576937971165">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="339" key="GridCell.Tab.1.bottom/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576171000010" />
-    <state width="1803" height="339" key="GridCell.Tab.1.center" timestamp="1576171000009">
+    <state width="1803" height="339" key="GridCell.Tab.1.bottom/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576937971165" />
+    <state width="1803" height="339" key="GridCell.Tab.1.center" timestamp="1576937971165">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="339" key="GridCell.Tab.1.center/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576171000009" />
-    <state width="1803" height="339" key="GridCell.Tab.1.left" timestamp="1576171000009">
+    <state width="1803" height="339" key="GridCell.Tab.1.center/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576937971165" />
+    <state width="1803" height="339" key="GridCell.Tab.1.left" timestamp="1576937971165">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="339" key="GridCell.Tab.1.left/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576171000009" />
-    <state width="1803" height="339" key="GridCell.Tab.1.right" timestamp="1576171000009">
+    <state width="1803" height="339" key="GridCell.Tab.1.left/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576937971165" />
+    <state width="1803" height="339" key="GridCell.Tab.1.right" timestamp="1576937971165">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="339" key="GridCell.Tab.1.right/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576171000009" />
+    <state width="1803" height="339" key="GridCell.Tab.1.right/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576937971165" />
     <state x="408" y="112" key="Maven.ArtifactSearchDialog" timestamp="1576236346342">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -404,10 +414,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="343" y="9" key="SettingsEditor/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576081286564" />
-    <state x="483" y="207" key="Vcs.Push.Dialog.v2" timestamp="1576321304367">
+    <state x="483" y="207" key="Vcs.Push.Dialog.v2" timestamp="1576574492591">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="483" y="207" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576321304367" />
+    <state x="483" y="207" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1576574492591" />
     <state x="644" y="421" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576152283504">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -435,7 +445,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/javatest/algorithm/QuickSort.java</url>
           <line>37</line>
-          <properties class="main.com.algorithm.QuickSort">
+          <properties class="com.javatest.algorithm.QuickSort" method="main">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
