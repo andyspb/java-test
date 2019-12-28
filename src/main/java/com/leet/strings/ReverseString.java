@@ -1,8 +1,6 @@
-package com.leet.resursion;
+package com.leet.strings;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 public class ReverseString {
 
   public void reverseString(char[] s) {
@@ -23,7 +21,7 @@ public class ReverseString {
 
   public static void main(String[] args) {
     ReverseString rs = new ReverseString();
-    char[] s = new char[]{'h', 'e', 'l', 'l', 'o'};
+    char[] s = new char[] {'h', 'e', 'l', 'l', 'o'};
     System.out.println(s);
     rs.reverseString(s);
     System.out.println(s);

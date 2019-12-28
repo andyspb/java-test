@@ -1,4 +1,4 @@
-package com.leet;
+package com.leet.array;
 
 import java.util.Arrays;
 
