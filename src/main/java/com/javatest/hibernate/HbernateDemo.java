@@ -12,11 +12,11 @@ public class HbernateDemo {
     session.beginTransaction();
 
     // Add new Employee object
-    Customer emp = new Customer();
-    emp.setFirstName("demo");
-    emp.setLastName("user");
+    Customer customer = new Customer();
+    customer.setFirstName("demo");
+    customer.setLastName("user");
 
-    session.save(emp);
+    session.save(customer);
 
     session.getTransaction().commit();
     HibernateUtil.shutdown();

@@ -16,8 +16,7 @@
         <property name="show_sql">true</property>
 
         <!-- List of XML mapping files -->
-        <!--        <mapping resource="customer.hbm.xml"/>
-                <mapping resource="order.hbm.xml"/>
-        -->
+        <mapping resource="customer.hbm.xml"/>
+        <mapping resource="order.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

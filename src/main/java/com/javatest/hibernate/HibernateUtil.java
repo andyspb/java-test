@@ -3,8 +3,6 @@ package com.javatest.hibernate;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.io.File;
-
 /**
  * @author Andrey Krutogolov
  */
@@ -15,7 +13,7 @@ public class HibernateUtil {
     try {
       // Create the SessionFactory from hibernate.cfg.xml
       SessionFactory sessionFactory =
-          new Configuration().configure(new File("hibernate.cgf.xml")).buildSessionFactory();
+          new Configuration().configure().buildSessionFactory();
       return sessionFactory;
     } catch (Throwable ex) {
       // Make sure you log the exception, as it might be swallowed

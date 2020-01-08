@@ -1,8 +1,8 @@
 package com.javatest.hibernate;
 
-import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 /**
  * @author Andrey Krutogolov

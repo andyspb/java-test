@@ -1,6 +1,5 @@
 package com.leet.array;
 
-import com.sun.deploy.security.SelectableSecurityManager;
 //Given an array of integers, find if the array contains any duplicates.
 import java.util.HashSet;
 import java.util.Set;
