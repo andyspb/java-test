@@ -1,6 +1,5 @@
 package com.leet.design;
 
-// Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 class Elem {
   public int value;
   public int min;
@@ -9,6 +8,9 @@ class Elem {
   public Elem(int value, int min) {
     this.value = value;
     this.min = min;
+  }
+  public Elem(int value) {
+    this.value = value;
   }
 }
 
