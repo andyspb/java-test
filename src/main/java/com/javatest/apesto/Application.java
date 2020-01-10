@@ -14,9 +14,9 @@ public class Application {
     StatisticsTrades statisticsTrades = new StatisticsTrades();
     List<StatisticsTrades.DescriptorAnswer> answers = statisticsTrades.execute(path);
     for (StatisticsTrades.DescriptorAnswer answer : answers) {
-      System.out.println("Максимальное количество сделок в течении одной секунды было между "
-          + answer.getStartSecond() + " и " + answer.getEndSecond() + " . В этот интервал прошло "
-          + answer.getCount() + " сделок на бирже " + answer.getExchange() + ".");
+      System.out.println("Max trades nom during the day for 1 sec"
+          + answer.getStartSecond() + " и " + answer.getEndSecond() + " . In this interval "
+          + answer.getCount() + " excahnge trades " + answer.getExchange() + ".");
     }
   }
 }

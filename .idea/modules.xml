@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/java-test.iml" filepath="$PROJECT_DIR$/java-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot/spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo/spring-demo.iml" filepath="$PROJECT_DIR$/spring-demo/spring-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-webflow/spring-webflow.iml" filepath="$PROJECT_DIR$/spring-webflow/spring-webflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-webflux/spring-webflux.iml" filepath="$PROJECT_DIR$/spring-webflux/spring-webflux.iml" />
     </modules>
   </component>
 </project>
