@@ -3,7 +3,6 @@ package com.leet.array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 
 // Given two arrays, write a function to compute their intersection.
 // Each element in the result should appear as many times as it shows in both arrays.

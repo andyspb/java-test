@@ -8,16 +8,6 @@ import java.io.OutputStreamWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class ListNode {
-  public ListNode(int data) {
-    this.data = data;
-    this.next = null;
-  }
-
-  public ListNode next;
-  public int data;
-}
-
 
 public class ReverseLinkedList {
   private static final Logger log = Logger.getLogger(Deadlock.class.getName());

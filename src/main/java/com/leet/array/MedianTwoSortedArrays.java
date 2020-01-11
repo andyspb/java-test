@@ -4,8 +4,6 @@ package com.leet.array;
 // Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 // You may assume nums1 and nums2 cannot be both empty.
 
-import java.util.Arrays;
-
 public class MedianTwoSortedArrays {
   public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     int length1 = nums1.length;
