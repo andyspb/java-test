@@ -1,12 +1,14 @@
 package com.leet.others;
 
 public class NumberOf1Bits {
-
+  public boolean getBit(int n, int i) {
+    return (n & ( 1<<i)) != 0;
+  }
   public int hammingWeight(int n) {
     int count = 0;
-    while (n > 0) {
-      count += n & 1;
-      n >>= 1;
+    for (int i = 1; i < 33; ++i) {
+      if (true == getBit(n,i))
+        ++count;
     }
     return count;
   }
@@ -17,7 +19,6 @@ public class NumberOf1Bits {
   }
 
   public static void main(String[] args) {
-    //
     NumberOf1Bits nob = new NumberOf1Bits();
     System.out.println(nob.hammingWeight(4));
   }
