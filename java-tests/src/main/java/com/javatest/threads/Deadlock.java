@@ -18,7 +18,6 @@ class Shared {
   }
 }
 
-
 class Thread1 extends Thread {
   private Shared s1, s2;
 
@@ -33,7 +32,6 @@ class Thread1 extends Thread {
   }
 }
 
-
 class Thread2 extends Thread {
   private Shared s1, s2;
 
@@ -47,7 +45,6 @@ class Thread2 extends Thread {
     s2.lock2(s1);
   }
 }
-
 
 public class Deadlock {
   private static final Logger log = Logger.getLogger(Deadlock.class.getName());
@@ -64,8 +61,6 @@ public class Deadlock {
     t1.start();
     t2.start();
 
-
-
     try {
       Thread.currentThread().join();
     } catch (InterruptedException e) {
@@ -74,6 +69,5 @@ public class Deadlock {
     }
 
     log.log(Level.INFO, "<<<");
-
   }
 }

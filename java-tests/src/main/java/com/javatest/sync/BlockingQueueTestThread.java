@@ -1,6 +1,5 @@
 package com.javatest.sync;
 
-
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -18,7 +17,6 @@ public class BlockingQueueTestThread {
 
     Thread.sleep(2000);
   }
-
 
   static class Insert implements Runnable {
     private BlockingQueue<Integer> queue;

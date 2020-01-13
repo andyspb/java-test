@@ -30,11 +30,10 @@ public class TwoSumCountPairs {
 
   public static void main(String[] args) {
     int[] nums = new int[] {1, 0, 1}; // target 2 1 -> [0,2]
-//    int[] nums = new int[] {1, 1, 1}; // target 2 3 -> [0,1] [0,2] [1,2]
-//    int[] nums = new int[] {1, 2, 3, -1, -2, 0 }; //target 3  2 -> [1,2] [3,0]
+    //    int[] nums = new int[] {1, 1, 1}; // target 2 3 -> [0,1] [0,2] [1,2]
+    //    int[] nums = new int[] {1, 2, 3, -1, -2, 0 }; //target 3  2 -> [1,2] [3,0]
     TwoSumCountPairs ts = new TwoSumCountPairs();
     System.out.println(Arrays.toString(nums));
     System.out.println("target_sum_count: " + ts.twoSum(nums, 2));
-
   }
 }

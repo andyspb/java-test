@@ -14,7 +14,6 @@ class CallableExample implements Callable<Object> {
   }
 }
 
-
 public class CallableFutureTest {
   public static void main(String[] args) throws Exception {
 

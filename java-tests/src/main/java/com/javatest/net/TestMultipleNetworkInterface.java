@@ -26,12 +26,12 @@ public class TestMultipleNetworkInterface {
 
     try {
       System.out.println("Full list of Network Interfaces:");
-      for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en
-          .hasMoreElements();) {
+      for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces();
+          en.hasMoreElements(); ) {
         NetworkInterface intf = en.nextElement();
         System.out.println("    " + intf.getName() + " " + intf.getDisplayName());
-        for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr
-            .hasMoreElements();) {
+        for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses();
+            enumIpAddr.hasMoreElements(); ) {
           System.out.println("        " + enumIpAddr.nextElement().toString());
         }
       }
@@ -39,5 +39,4 @@ public class TestMultipleNetworkInterface {
       System.out.println(" (error retrieving network interface list)");
     }
   }
-
 }

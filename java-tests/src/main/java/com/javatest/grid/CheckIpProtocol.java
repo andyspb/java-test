@@ -26,9 +26,9 @@ public class CheckIpProtocol {
    * matching to see if the given string could be a valid IP address.
    *
    * @param ipAddress A string that is to be examined to verify whether or not it could be a valid
-   *        IP address.
-   * @return <code>true</code> if the string is a value that is a valid IP address,
-   *         <code>false</code> otherwise.
+   *     IP address.
+   * @return <code>true</code> if the string is a value that is a valid IP address, <code>false
+   *     </code> otherwise.
    */
   public static boolean isIpAddress(String ipAddress) {
 
@@ -50,10 +50,5 @@ public class CheckIpProtocol {
     System.out.println(ip4 + ": " + isIpAddress(ip4));
     System.out.println(ip6 + ": " + isIpAddress(ip6));
     System.out.println(ip6_wrong + ": " + isIpAddress(ip6_wrong));
-
-
-
   }
-
-
 }

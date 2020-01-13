@@ -2,9 +2,7 @@ package com.javatest.atomic;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 public class MyObject {
   private volatile Book whatImReading;
 

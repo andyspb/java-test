@@ -27,5 +27,4 @@ public class Meal {
   public void addItem(Item item) {
     items.add(item);
   }
-
 }

@@ -14,12 +14,9 @@ class A {
   public int getI() {
     return i;
   }
-
 }
 
-
 class B extends A {}
-
 
 public class PrivateTest {
   private static final Logger log = Logger.getLogger(PrivateTest.class.getName());

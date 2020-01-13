@@ -1,7 +1,7 @@
 package com.leet.sort;
 
-class VersionControl{
+class VersionControl {
   boolean isBadVersion(int version) {
-    return version>3?true:false;
+    return version > 3 ? true : false;
   }
 }

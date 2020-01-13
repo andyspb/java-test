@@ -23,9 +23,7 @@ public class MergeArraysTest {
         out[k++] = in2[j++];
       }
     }
-
   }
-
 
   public static void main(String[] args) {
     System.out.println("Merging of two arrays:");
@@ -40,10 +38,9 @@ public class MergeArraysTest {
 
     try {
       new MergeArraysTest().mergeArrays(a1, a2, a3);
-    } catch (Exception e) {}
+    } catch (Exception e) {
+    }
 
     Utils.printArray(a3);
-
   }
-
 }

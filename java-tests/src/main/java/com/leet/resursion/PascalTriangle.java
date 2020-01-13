@@ -3,9 +3,7 @@ package com.leet.resursion;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 
 // Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
 // Input: 5

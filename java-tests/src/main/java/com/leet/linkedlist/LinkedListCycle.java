@@ -6,15 +6,16 @@ public class LinkedListCycle {
     if (head.next == head) return true;
     ListNode slow = head;
     ListNode fast = head;
-    while(slow!= null && slow.next!= null && fast != null && fast.next != null) {
+    while (slow != null && slow.next != null && fast != null && fast.next != null) {
       slow = slow.next;
       fast = fast.next;
-      if (fast != null){
+      if (fast != null) {
         fast = fast.next;
         if (slow == fast) {
           return true;
         }
-      };
+      }
+      ;
     }
     return false;
   }

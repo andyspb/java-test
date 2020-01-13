@@ -58,13 +58,23 @@ public class Interval {
   }
 
   public String getLineStart() {
-    return TimeUnit.MILLISECONDS.toHours(start) + ":" + TimeUnit.MILLISECONDS.toMinutes(start) % 60
-        + ":" + TimeUnit.MILLISECONDS.toSeconds(start) % 60 + "." + start % 1000;
+    return TimeUnit.MILLISECONDS.toHours(start)
+        + ":"
+        + TimeUnit.MILLISECONDS.toMinutes(start) % 60
+        + ":"
+        + TimeUnit.MILLISECONDS.toSeconds(start) % 60
+        + "."
+        + start % 1000;
   }
 
   public String getLineEnd() {
-    return TimeUnit.MILLISECONDS.toHours(end) + ":" + TimeUnit.MILLISECONDS.toMinutes(end) % 60
-        + ":" + TimeUnit.MILLISECONDS.toSeconds(end) % 60 + "." + end % 1000;
+    return TimeUnit.MILLISECONDS.toHours(end)
+        + ":"
+        + TimeUnit.MILLISECONDS.toMinutes(end) % 60
+        + ":"
+        + TimeUnit.MILLISECONDS.toSeconds(end) % 60
+        + "."
+        + end % 1000;
   }
 
   @Override

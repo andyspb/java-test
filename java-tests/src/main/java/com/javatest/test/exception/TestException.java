@@ -33,5 +33,4 @@ public class TestException extends Exception {
       System.out.println("This is my custom exception:" + ex.getMessage());
     }
   }
-
 }

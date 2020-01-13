@@ -20,5 +20,4 @@ public class RunMethodExample implements Runnable {
     th1.run();
     th2.run();
   }
-
 }

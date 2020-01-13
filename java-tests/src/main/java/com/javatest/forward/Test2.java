@@ -1,6 +1,5 @@
 package com.javatest.forward;
 
-
 // main() function of this class uses Test1 which is declared later in
 // this file
 class Test2 {
@@ -9,7 +8,6 @@ class Test2 {
     t1.fun(5);
   }
 }
-
 
 class Test1 {
   void fun(int x) {

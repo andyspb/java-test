@@ -25,5 +25,4 @@ public class GenericMethodTest {
     System.out.println("\nArray characterArray contains:");
     printArray(charArray); // pass a Character array
   }
-
 }

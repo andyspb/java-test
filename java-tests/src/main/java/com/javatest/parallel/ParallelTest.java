@@ -1,10 +1,6 @@
 package com.javatest.parallel;
 
-/**
- * @author andy
- *
- */
-
+/** @author andy */
 import java.util.*;
 
 class ParallelTest {
@@ -37,5 +33,4 @@ class ParallelTest {
     listOfIntegers.parallelStream().forEachOrdered(e -> System.out.print(e + " "));
     System.out.println("");
   }
-
 }

@@ -1,4 +1,4 @@
-//package com.javatest.generic;
+// package com.javatest.generic;
 //
 // public class Sample {
 // interface BadList<T> extends List<List<? super BadList<? super T>>> {}

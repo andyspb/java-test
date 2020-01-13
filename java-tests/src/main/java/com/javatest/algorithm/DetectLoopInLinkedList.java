@@ -17,7 +17,6 @@ class LListNode {
   }
 }
 
-
 public class DetectLoopInLinkedList {
 
   static boolean detectLoop(LListNode head) {
@@ -53,11 +52,9 @@ public class DetectLoopInLinkedList {
     list = list.push(11, list);
     list = list.push(12, list);
 
-
     list = list.push(13, list);
     LListNode loop = list;
     list = list.push(14, list);
-
 
     prinList(head);
 

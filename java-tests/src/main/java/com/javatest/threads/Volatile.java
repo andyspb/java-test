@@ -3,19 +3,14 @@ package com.javatest.threads;
 public class Volatile {
 
   static int j = 0;
-  volatile static int i = 0;
+  static volatile int i = 0;
 
   private int a;
   public int b;
 
-  public static void test() {
+  public static void test() {}
 
-  }
-
-  public void test1() {
-
-  }
-
+  public void test1() {}
 
   public static void main(String... strings) {
 
@@ -29,10 +24,7 @@ public class Volatile {
     t.start();
     new Volatile.ReadThread().start();
     System.out.println(i);
-
-
   }
-
 
   public class Inner {
 
@@ -40,7 +32,6 @@ public class Volatile {
       Volatile.test();
 
       Volatile.this.test1();
-
     }
 
     private int i;
@@ -55,8 +46,6 @@ public class Volatile {
     public void run() {
 
       Volatile.test();
-
-
 
       while (i < 5) {
         System.out.println("increase j:" + (++j));

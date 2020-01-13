@@ -14,7 +14,6 @@ public class RunMethodExample2 implements Runnable {
     }
   }
 
-
   public static void main(String args[]) {
     Thread th1 = new Thread(new RunMethodExample2(), "th1");
     Thread th2 = new Thread(new RunMethodExample2(), "th2");

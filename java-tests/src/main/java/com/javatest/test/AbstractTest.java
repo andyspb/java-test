@@ -6,14 +6,11 @@ abstract class Base {
   }
 }
 
-
 class Derived extends Base {}
-
 
 public class AbstractTest {
   public static void main(String args[]) {
     Base d = new Derived();
     d.fun();
   }
-
 }

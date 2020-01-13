@@ -30,6 +30,7 @@ public class HttpServerTest {
       os.close();
     }
   }
+
   static class Test2Handler implements HttpHandler {
     @Override
     public void handle(HttpExchange t) throws IOException {

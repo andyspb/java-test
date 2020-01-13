@@ -3,13 +3,13 @@ import org.apache.spark.SparkConf
 
 object Wordcount {
   def main(args: Array[String]) {
-     println("Hello, Wordcount!")
- 
+    println("Hello, Wordcount!")
+
     //Create conf object
     val conf = new SparkConf()
       .setAppName("WordCount")
-        .setMaster("local[1]")
-        .set("spark.executor.memory","1g");
+      .setMaster("local[1]")
+      .set("spark.executor.memory", "1g");
 
     //create spark context object
     val sc = new SparkContext(conf)

@@ -18,8 +18,6 @@ import java.util.ArrayList;
 
 public class FindOneSecondWindow {
 
-
-
   public static void main(String[] args) throws FileNotFoundException {
     String currentPath = System.getProperty("user.dir");
     currentPath = currentPath + "\\bin";

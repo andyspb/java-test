@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class Graph {
   private static final Logger log = Logger.getLogger(Graph.class.getName());
   private int V; // No. of vertices
@@ -16,8 +15,7 @@ public class Graph {
   Graph(int v) {
     V = v;
     adj = new LinkedList[v];
-    for (int i = 0; i < v; ++i)
-      adj[i] = new LinkedList();
+    for (int i = 0; i < v; ++i) adj[i] = new LinkedList();
   }
 
   // Function to add an edge into the graph

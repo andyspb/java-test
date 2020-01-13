@@ -19,7 +19,10 @@ public class ManageEmployee {
   private static SessionFactory configureSessionFactory() throws HibernateException {
     Configuration configuration = new Configuration();
     configuration.configure();
-    serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
+    serviceRegistry =
+        new ServiceRegistryBuilder()
+            .applySettings(configuration.getProperties())
+            .buildServiceRegistry();
     sessionFactory = configuration.buildSessionFactory();
     return sessionFactory;
   }

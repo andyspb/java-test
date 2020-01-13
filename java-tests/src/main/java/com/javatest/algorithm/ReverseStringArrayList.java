@@ -12,7 +12,6 @@ public class ReverseStringArrayList {
     String input = "Geeks For Geeks";
     System.out.println(input);
 
-
     char[] arr = input.toCharArray();
     List<Character> list = new ArrayList<>();
 
@@ -26,7 +25,5 @@ public class ReverseStringArrayList {
       System.out.print(iter.next());
     }
     System.out.println();
-
   }
-
 }

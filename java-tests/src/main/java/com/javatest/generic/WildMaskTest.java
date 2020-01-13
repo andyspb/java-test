@@ -5,7 +5,6 @@ import java.util.List;
 
 public class WildMaskTest {
 
-
   static void printList(List<?> list) {
     for (Object l : list) {
       System.out.print("{" + l + "} ");
@@ -24,5 +23,4 @@ public class WildMaskTest {
     strList.add("100");
     printList(strList);
   }
-
 }

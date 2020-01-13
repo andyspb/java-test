@@ -14,9 +14,7 @@ class CallableExample implements Callable<Integer> {
     Thread.sleep(randomInteger * 1000);
     return randomInteger;
   }
-
 }
-
 
 public class CallableFutureTest {
 
@@ -34,5 +32,4 @@ public class CallableFutureTest {
       System.out.println(randomNumberTasks[i].get());
     }
   }
-
 }

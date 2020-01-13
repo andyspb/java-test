@@ -7,9 +7,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
-/**
- * @author Andrey Krutogolov
- **/
+/** @author Andrey Krutogolov */
 public class App {
   public static void main(String[] args) {
     //
@@ -37,6 +35,5 @@ public class App {
     Transaction tx = session.beginTransaction();
     session.save(telusko);
     tx.commit();
-
   }
 }

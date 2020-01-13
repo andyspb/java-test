@@ -31,9 +31,7 @@ public class BinarySearch {
     int n = arr.length;
     int x = 10;
     int result = bs.binarySearch(arr, 0, n - 1, x);
-    if (result == -1)
-      System.out.println("Element not present");
-    else
-      System.out.println("Element found at index " + result);
+    if (result == -1) System.out.println("Element not present");
+    else System.out.println("Element found at index " + result);
   }
 }

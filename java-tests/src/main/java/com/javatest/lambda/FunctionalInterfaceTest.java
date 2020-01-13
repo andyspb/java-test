@@ -13,8 +13,5 @@ public class FunctionalInterfaceTest {
     int res = s.calculate(a);
 
     System.out.println("s(" + a + ")= " + res);
-
-
   }
-
 }

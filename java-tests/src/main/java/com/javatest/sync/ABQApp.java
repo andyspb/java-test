@@ -7,8 +7,9 @@ import java.util.concurrent.BlockingQueue;
 
 class Producer implements Runnable {
   private BlockingQueue<String> drop;
-  List<String> messages = Arrays.asList("Mares eat oats", "Does eat oats", "Little lambs eat ivy",
-      "Wouldn't you eat ivy too?");
+  List<String> messages =
+      Arrays.asList(
+          "Mares eat oats", "Does eat oats", "Little lambs eat ivy", "Wouldn't you eat ivy too?");
 
   public Producer(BlockingQueue<String> d) {
     this.drop = d;
@@ -28,7 +29,6 @@ class Producer implements Runnable {
   }
 }
 
-
 class Consumer implements Runnable {
   private BlockingQueue<String> drop;
 
@@ -40,14 +40,12 @@ class Consumer implements Runnable {
   public void run() {
     try {
       String msg = null;
-      while (!((msg = drop.take()).equals("DONE")))
-        System.out.println("C:" + msg);
+      while (!((msg = drop.take()).equals("DONE"))) System.out.println("C:" + msg);
     } catch (InterruptedException intEx) {
       System.out.println("Interrupted! " + "Last one out, turn out the lights!");
     }
   }
 }
-
 
 public class ABQApp {
   public static void main(String[] args) {

@@ -1,8 +1,6 @@
 package com.javatest.apesto;
 
-/**
- * Класс для описания сделки
- */
+/** Класс для описания сделки */
 public class Trade {
   private long time;
   private double price;
@@ -50,7 +48,17 @@ public class Trade {
 
   @Override
   public String toString() {
-    return "Trade{" + "time='" + time + '\'' + ", price=" + price + ", share=" + share
-        + ", exchange='" + exchange + '\'' + '}';
+    return "Trade{"
+        + "time='"
+        + time
+        + '\''
+        + ", price="
+        + price
+        + ", share="
+        + share
+        + ", exchange='"
+        + exchange
+        + '\''
+        + '}';
   }
 }

@@ -1,8 +1,6 @@
 package com.javatest.algorithm;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 
 // Given a square matrix,
 // find if it’s a Toeplitz matrix or not. A Toeplitz (or diagonal-constant) matrix is a matrix
@@ -22,11 +20,8 @@ public class ToeplitzMatrix {
   public static void main(String[] args) {
     int mat[][] = {{6, 7, 8, 9}, {4, 6, 7, 8}, {1, 4, 6, 7}, {0, 1, 4, 6}, {2, 0, 1, 4}};
 
-    if (isToepliz(mat))
-      System.out.println("Matrix is a Toepliz ");
-    else
-      System.out.println("Matrix is not a Toepliz ");
-
+    if (isToepliz(mat)) System.out.println("Matrix is a Toepliz ");
+    else System.out.println("Matrix is not a Toepliz ");
   }
 
   static boolean isToepliz(int arr[][]) {

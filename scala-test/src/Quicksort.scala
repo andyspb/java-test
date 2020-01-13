@@ -4,7 +4,7 @@ object QuickSort {
 
   def main(args: Array[String]) {
     println("MergeSort >>> ")
- 
+
     val a1 = List[Int](11, 2, 12, 1, 0, 23, 7, 0, -2, 5)
     println(a1.mkString(" "))
     val l = sort(a1)

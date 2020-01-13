@@ -21,6 +21,5 @@ public class RemoveNodeFromLinkedList {
     System.out.println(ll1);
     rm.deleteNode(ll2);
     System.out.println(ll1);
-
   }
 }

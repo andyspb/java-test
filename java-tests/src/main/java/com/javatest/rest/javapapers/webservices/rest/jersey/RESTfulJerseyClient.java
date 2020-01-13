@@ -21,19 +21,40 @@ public class RESTfulJerseyClient {
     WebTarget webTarget = client.target(serviceURI);
 
     // response
-    System.out.println(webTarget.path("rest").path("helloworld").request()
-        .accept(MediaType.TEXT_PLAIN).get(Response.class).toString());
+    System.out.println(
+        webTarget
+            .path("rest")
+            .path("helloworld")
+            .request()
+            .accept(MediaType.TEXT_PLAIN)
+            .get(Response.class)
+            .toString());
 
     // text
-    System.out.println(webTarget.path("rest").path("helloworld").request()
-        .accept(MediaType.TEXT_PLAIN).get(String.class));
+    System.out.println(
+        webTarget
+            .path("rest")
+            .path("helloworld")
+            .request()
+            .accept(MediaType.TEXT_PLAIN)
+            .get(String.class));
 
     // xml
-    System.out.println(webTarget.path("rest").path("helloworld").request()
-        .accept(MediaType.TEXT_XML).get(String.class));
+    System.out.println(
+        webTarget
+            .path("rest")
+            .path("helloworld")
+            .request()
+            .accept(MediaType.TEXT_XML)
+            .get(String.class));
 
     // html
-    System.out.println(webTarget.path("rest").path("helloworld").request()
-        .accept(MediaType.TEXT_HTML).get(String.class));
+    System.out.println(
+        webTarget
+            .path("rest")
+            .path("helloworld")
+            .request()
+            .accept(MediaType.TEXT_HTML)
+            .get(String.class));
   }
 }

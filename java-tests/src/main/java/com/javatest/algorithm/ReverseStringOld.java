@@ -17,6 +17,5 @@ public class ReverseStringOld {
     }
 
     System.out.println(new String(arr));
-
   }
 }

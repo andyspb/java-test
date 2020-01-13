@@ -3,9 +3,7 @@ package com.javatest.language;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 public class ClassLoaderTest {
 
   public static void main(String args[]) {

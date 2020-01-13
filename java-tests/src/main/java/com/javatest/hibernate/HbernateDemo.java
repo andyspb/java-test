@@ -2,9 +2,7 @@ package com.javatest.hibernate;
 
 import org.hibernate.Session;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 public class HbernateDemo {
 
   public static void main(String[] args) {

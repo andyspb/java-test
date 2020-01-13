@@ -29,7 +29,7 @@ public class Anagram {
         return false;
       }
     }
-    return map.size() == 0 ;
+    return map.size() == 0;
   }
 
   public static void main(String[] args) {

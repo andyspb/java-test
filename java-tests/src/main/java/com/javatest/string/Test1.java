@@ -10,7 +10,6 @@ public class Test1 {
     System.out.print("Objects");
   }
 
-
   public static void main(java.lang.String[] args) {
     System.out.println("Middle");
   }

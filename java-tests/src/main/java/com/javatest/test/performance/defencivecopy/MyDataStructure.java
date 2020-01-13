@@ -13,10 +13,9 @@ public class MyDataStructure {
 
   /**
    * Makes a defensive copy of the List and return it This way cannot modify the list itself
-   * 
+   *
    * @return List<String>
    */
-
   public List<String> getList() {
     return Collections.unmodifiableList(list);
   }

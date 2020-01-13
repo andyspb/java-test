@@ -1,6 +1,6 @@
-package com.javatest.language;/*
- *  @author Andrey Krutogolov
- */
+package com.javatest.language; /*
+                                *  @author Andrey Krutogolov
+                                */
 
 public class ByteTest1 extends ByteTest {
   @Override

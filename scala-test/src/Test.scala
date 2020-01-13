@@ -9,5 +9,5 @@ object Test {
     println("multiplier(1) value =" + multiplier(1))
     println("multiplier(2) value =" + multiplier(2))
   }
-  
+
 }

@@ -5,7 +5,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
 public class ThreadLocalTest<T> {
 
   public static void main(String args[]) throws IOException {
@@ -14,7 +13,6 @@ public class ThreadLocalTest<T> {
 
     t1.start();
     t2.start();
-
   }
 
   protected SimpleDateFormat initialValue() {
@@ -30,7 +28,6 @@ public class ThreadLocalTest<T> {
     return null;
   }
 }
-
 
 class PerThreadFormatter {
   private static final ThreadLocalTest<SimpleDateFormat> dateFormatHolder =
@@ -56,14 +53,16 @@ class PerThreadFormatter {
   }
 }
 
-
 class Task implements Runnable {
 
   @Override
   public void run() {
     for (int i = 0; i < 2; i++) {
-      System.out.println("Thread: " + Thread.currentThread().getName() + " Formatted Date: "
-          + ThreadLocalTest.threadSafeFormat(new Date()));
+      System.out.println(
+          "Thread: "
+              + Thread.currentThread().getName()
+              + " Formatted Date: "
+              + ThreadLocalTest.threadSafeFormat(new Date()));
     }
   }
 }

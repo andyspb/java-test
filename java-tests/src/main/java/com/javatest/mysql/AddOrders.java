@@ -32,8 +32,14 @@ public class AddOrders {
       int[] qtys = {1100, 1120, 2100, 1500, 400, 1300, 200};
 
       for (int i = 0; i < client_ids.length; ++i) {
-        query = "insert into orders (client_id, price,qty) values('" + client_ids[i] + "', '"
-            + prices[i] + "','" + qtys[i] + "')";
+        query =
+            "insert into orders (client_id, price,qty) values('"
+                + client_ids[i]
+                + "', '"
+                + prices[i]
+                + "','"
+                + qtys[i]
+                + "')";
         statement.executeUpdate(query);
       }
 

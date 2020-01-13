@@ -14,7 +14,7 @@ public interface TimeClient {
 
   public LocalDateTime getLocalDateTime();
 
-  static public ZoneId getZoneId(String zoneString) {
+  public static ZoneId getZoneId(String zoneString) {
     try {
       return ZoneId.of(zoneString);
     } catch (DateTimeException e) {

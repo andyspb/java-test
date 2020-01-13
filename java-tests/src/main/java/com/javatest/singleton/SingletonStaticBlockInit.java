@@ -19,5 +19,4 @@ public class SingletonStaticBlockInit {
   private SingletonStaticBlockInit() {
     // ...
   }
-
 }

@@ -6,9 +6,8 @@ import java.util.List;
 /**
  * Data structure for a web crawler. Keeps track of the visited sites and keeps a list of sites
  * which needs still to be crawled.
- * 
- * @author andy
  *
+ * @author andy
  */
 public class CrawledSites {
 
@@ -38,12 +37,9 @@ public class CrawledSites {
     }
   }
 
-  /**
-   * @param args
-   */
+  /** @param args */
   public static void main(String[] args) {
     // TODO Auto-generated method stub
 
   }
-
 }

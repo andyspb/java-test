@@ -8,11 +8,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-
 public class StatisticsTrades {
-  /**
-   * Класс для запоминания макимального количества сделок на каждой бирже
-   */
+  /** Класс для запоминания макимального количества сделок на каждой бирже */
   class DescriptorAnswer {
     private String exchange;
     private String startSecond;
@@ -45,7 +42,7 @@ public class StatisticsTrades {
 
   /**
    * Информация по всем биржам
-   * 
+   *
    * @param key - биржа
    * @param Trade {@link Trade}
    */
@@ -60,7 +57,7 @@ public class StatisticsTrades {
 
   /**
    * Метод для определения количества бирж
-   * 
+   *
    * @return возвращает общее количесвто бирж
    */
   public int getCountExchange() {
@@ -69,7 +66,7 @@ public class StatisticsTrades {
 
   /**
    * Метод для чтения из файла
-   * 
+   *
    * @param path полный путь к файлу
    */
   private void readFromCSV(Path path) throws IOException, ParseException {
@@ -104,7 +101,7 @@ public class StatisticsTrades {
 
   /**
    * Главый метод для запуска обработки
-   * 
+   *
    * @param path полный путь к файлу
    * @return возвращает статистику по каждой бирже, где есть окно длительностью РОВНО 1 секунда
    */
@@ -158,8 +155,12 @@ public class StatisticsTrades {
     }
 
     if (maxCount > 0) {
-      answer = new DescriptorAnswer(exchange, format.format(new Date(maxStartSecond)),
-          format.format(new Date(maxEndSecond)), maxCount);
+      answer =
+          new DescriptorAnswer(
+              exchange,
+              format.format(new Date(maxStartSecond)),
+              format.format(new Date(maxEndSecond)),
+              maxCount);
     }
     return answer;
   }

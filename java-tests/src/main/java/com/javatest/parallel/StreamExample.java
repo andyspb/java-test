@@ -8,8 +8,7 @@ public class StreamExample {
 
   public static void main(String[] args) {
     List<Integer> myList = new ArrayList<>();
-    for (int i = 0; i < 100; i++)
-      myList.add(i);
+    for (int i = 0; i < 100; i++) myList.add(i);
 
     // sequential stream
     Stream<Integer> sequentialStream = myList.stream();

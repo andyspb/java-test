@@ -25,12 +25,11 @@ public abstract class Anagram {
     String s2 = "abab";
     String s3 = "bbaa";
 
-    log.log(Level.INFO,
-        "Is anagrams(" + s1 + ", " + s2 + ") :" + Boolean.toString(isAnagram(s1, s2)));
-    log.log(Level.INFO,
-        "Is anagrams(" + s1 + ", " + s3 + ") :" + Boolean.toString(isAnagram(s1, s3)));
+    log.log(
+        Level.INFO, "Is anagrams(" + s1 + ", " + s2 + ") :" + Boolean.toString(isAnagram(s1, s2)));
+    log.log(
+        Level.INFO, "Is anagrams(" + s1 + ", " + s3 + ") :" + Boolean.toString(isAnagram(s1, s3)));
 
     log.log(Level.INFO, ">>>");
   }
-
 }

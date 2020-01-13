@@ -21,21 +21,23 @@ public class TestPrintDictionary {
 
   static void printDictionarySortedByValue(String name, Map<?, Integer> c) {
     out.printf(c.isEmpty() ? "Dictionary '%s' is empty.\n" : "Dictionary '%s':\n", name);
-    c.entrySet().stream().sorted((e1, e2) -> e2.getValue() - e1.getValue())
+    c.entrySet().stream()
+        .sorted((e1, e2) -> e2.getValue() - e1.getValue())
         .forEach(e -> out.printf("\t%s[%s] == %d\n", name, e.getKey(), e.getValue()));
   }
 
   public static void main(String[] args) {
     try {
       // Map<String, Integer>
-      printDictionarySortedByValue("words",
+      printDictionarySortedByValue(
+          "words",
           Files.lines(Paths.get("/home/andy/github/java-test/test/text.txt"))
               .flatMap(s -> Arrays.stream(s.split(WORD_DELIMITERS_REGEX)))
-              .filter(s -> !s.isEmpty() && !nonWords.contains(s)).map(String::toLowerCase)
+              .filter(s -> !s.isEmpty() && !nonWords.contains(s))
+              .map(String::toLowerCase)
               .collect(Collectors.toMap(k -> k, k -> 1, (v1, v2) -> v1 + v2)));
     } catch (Exception e) {
       e.printStackTrace();
     }
   }
-
 }

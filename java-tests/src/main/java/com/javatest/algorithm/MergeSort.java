@@ -19,7 +19,6 @@ public class MergeSort {
     printArray(arr);
   }
 
-
   public void sort(int[] values) {
     this.arr = values;
     len = values.length;
@@ -60,11 +59,9 @@ public class MergeSort {
     }
   }
 
-
   static void printArray(int arr[]) {
     int n = arr.length;
-    for (int i = 0; i < n; ++i)
-      System.out.print(arr[i] + " ");
+    for (int i = 0; i < n; ++i) System.out.print(arr[i] + " ");
     System.out.println();
   }
 }

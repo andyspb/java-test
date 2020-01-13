@@ -1,13 +1,9 @@
 package com.javatest.hibernate;
 
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-/**
- * @author Andrey Krutogolov
- **/
-
+/** @author Andrey Krutogolov */
 @Entity
 @Table(name = "alien_table")
 public class Alien {
@@ -16,8 +12,10 @@ public class Alien {
   @Column(name = "id")
   @NotNull
   private int aid;
+
   @OneToOne(cascade = {CascadeType.ALL})
   private AlienName name;
+
   private String color;
 
   public int getAid() {

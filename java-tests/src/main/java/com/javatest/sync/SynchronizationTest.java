@@ -14,7 +14,5 @@ public class SynchronizationTest {
     List<String> syncList = Collections.synchronizedList(list);
 
     System.out.println("Synchronized list :" + syncList);
-
   }
-
 }

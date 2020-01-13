@@ -31,7 +31,6 @@ public class BinaryTreePrintLevelOrder {
       currentLevel = nextLevel;
       nextLevel = new LinkedList<>();
     }
-
   }
 
   public static void main(String[] args) {
@@ -53,11 +52,8 @@ public class BinaryTreePrintLevelOrder {
     bt3.right = bt7;
 
     printLevelOrder(bt1);
-
   }
-
 }
-
 
 class BiTreeNode {
   public int value;
@@ -69,5 +65,4 @@ class BiTreeNode {
     this.left = null;
     this.right = null;
   }
-
 }

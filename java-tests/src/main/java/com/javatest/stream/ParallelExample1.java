@@ -18,6 +18,5 @@ public class ParallelExample1 {
 
     IntStream range2 = IntStream.rangeClosed(1, 10);
     range2.parallel().forEach(System.out::println);
-
   }
 }

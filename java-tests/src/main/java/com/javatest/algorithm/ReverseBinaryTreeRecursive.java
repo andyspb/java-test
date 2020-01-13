@@ -1,6 +1,6 @@
 package com.javatest.algorithm;
 
-//class BTNode<T> {
+// class BTNode<T> {
 //
 //  T value;
 //  BTNode<?> left;
@@ -11,8 +11,7 @@ package com.javatest.algorithm;
 //  }
 //
 //
-//}
-
+// }
 
 public class ReverseBinaryTreeRecursive {
 

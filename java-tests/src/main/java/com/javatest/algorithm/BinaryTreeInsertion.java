@@ -19,7 +19,6 @@ class BTNode {
   public int value;
 }
 
-
 public class BinaryTreeInsertion {
 
   static BTNode root;
@@ -44,14 +43,12 @@ public class BinaryTreeInsertion {
       if (temp.left == null) {
         temp.left = new BTNode(key);
         break;
-      } else
-        q.add(temp.left);
+      } else q.add(temp.left);
 
       if (temp.right == null) {
         temp.right = new BTNode(key);
         break;
-      } else
-        q.add(temp.right);
+      } else q.add(temp.right);
     }
   }
 

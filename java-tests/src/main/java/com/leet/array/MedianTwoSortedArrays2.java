@@ -16,11 +16,9 @@ public class MedianTwoSortedArrays2 {
     while (i < nums1.length && j < nums2.length) {
       m[k++] = nums1[i] < nums2[j] ? nums1[i++] : nums2[j++];
     }
-    while (i < nums1.length)
-      m[k++] = nums1[i++];
+    while (i < nums1.length) m[k++] = nums1[i++];
 
-    while (j < nums2.length)
-      m[k++] = nums2[j++];
+    while (j < nums2.length) m[k++] = nums2[j++];
 
     System.out.println(Arrays.toString(m));
     return med;

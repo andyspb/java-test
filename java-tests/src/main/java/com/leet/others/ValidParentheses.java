@@ -6,16 +6,14 @@ import java.util.Stack;
 
 public class ValidParentheses {
   public boolean isValid(String s) {
-    if (s == null)
-      return false;
-    if (s.length() == 0 )
-      return true;
+    if (s == null) return false;
+    if (s.length() == 0) return true;
     Map<Character, Character> map = new HashMap<>();
     map.put('(', ')');
     map.put('[', ']');
     map.put('{', '}');
-    if (s.length() == 1 && (map.keySet().contains(s.charAt(0)) || map.values().contains(s.charAt(0))) )
-      return false;
+    if (s.length() == 1
+        && (map.keySet().contains(s.charAt(0)) || map.values().contains(s.charAt(0)))) return false;
     Stack<Character> stack = new Stack<>();
     for (int i = 0; i < s.length(); ++i) {
       char cur = s.charAt(i);

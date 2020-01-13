@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 public class StreamException {
 
   private static Integer divide(Integer value, Integer factor) {

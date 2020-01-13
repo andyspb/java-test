@@ -13,7 +13,6 @@ class Serial1 implements Serializable {
   Serial2 s2 = new Serial2();
 }
 
-
 // Class Serial2 contains reference to object
 // of class Serial3.
 class Serial2 implements Serializable {
@@ -21,14 +20,12 @@ class Serial2 implements Serializable {
   Serial3 s3 = new Serial3();
 }
 
-
 // A reference of this class is present in Serial2
 class Serial3 implements Serializable {
   private static final long serialVersionUID = 1L;
   int i = 10;
   int j = 20;
 }
-
 
 public class DemoSerialize {
 
@@ -55,5 +52,4 @@ public class DemoSerialize {
     System.out.println("Value of i after Serialization" + " is " + serobject.s2.s3.i);
     System.out.println("Value of j after Serialization" + " is " + serobject.s2.s3.j);
   }
-
 }

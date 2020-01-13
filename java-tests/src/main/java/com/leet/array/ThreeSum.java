@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 
 //    Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0?
 //    Find all unique triplets in the array which gives the sum of zero.
@@ -29,11 +27,9 @@ public class ThreeSum {
 
         if (nums[i] + nums[j] + nums[k] > 0) {
           k--;
-        }
-        else if (nums[i] + nums[j] + nums[k] < 0) {
+        } else if (nums[i] + nums[j] + nums[k] < 0) {
           j++;
-        }
-        else {
+        } else {
           List<Integer> l = Arrays.asList(nums[i], nums[j], nums[k]);
           result.add(l);
           j++;
@@ -46,7 +42,7 @@ public class ThreeSum {
   }
 
   public static void main(String[] args) {
-    int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
+    int[] nums = new int[] {-1, 0, 1, 2, -1, -4};
     ThreeSum ts = new ThreeSum();
     List res = ts.threeSum(nums);
     System.out.println(res);

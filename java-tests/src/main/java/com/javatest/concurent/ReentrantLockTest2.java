@@ -17,24 +17,25 @@ public class ReentrantLockTest2 {
     ExecutorService executor = Executors.newFixedThreadPool(2);
     ReentrantLock lock = new ReentrantLock();
 
-    executor.submit(() -> {
-      lock.lock();
-      try {
-        Thread.sleep(1);
-      } catch (Exception e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-      } finally {
-        lock.unlock();
-      }
-    });
+    executor.submit(
+        () -> {
+          lock.lock();
+          try {
+            Thread.sleep(1);
+          } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+          } finally {
+            lock.unlock();
+          }
+        });
 
-    executor.submit(() -> {
-      System.out.println("Locked: " + lock.isLocked());
-      System.out.println("Held by me: " + lock.isHeldByCurrentThread());
-      boolean locked = lock.tryLock();
-      System.out.println("Lock acquired: " + locked);
-    });
+    executor.submit(
+        () -> {
+          System.out.println("Locked: " + lock.isLocked());
+          System.out.println("Held by me: " + lock.isHeldByCurrentThread());
+          boolean locked = lock.tryLock();
+          System.out.println("Lock acquired: " + locked);
+        });
   }
-
 }

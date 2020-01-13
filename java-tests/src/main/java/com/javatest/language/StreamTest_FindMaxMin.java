@@ -3,7 +3,6 @@ package com.javatest.language;
 import java.util.ArrayList;
 import java.util.Optional;
 
-
 public class StreamTest_FindMaxMin {
   public static void main(String... args) {
     ArrayList<Integer> testValues = new ArrayList<Integer>();
@@ -28,6 +27,4 @@ public class StreamTest_FindMaxMin {
         testValuesNull.stream().filter((p) -> p != null).max(Integer::compareTo);
     System.out.println("maxValueNotNull=" + maxValueNotNull);
   }
-
-
 }

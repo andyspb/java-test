@@ -8,7 +8,6 @@ import java.io.OutputStreamWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class ReverseLinkedList {
   private static final Logger log = Logger.getLogger(Deadlock.class.getName());
 
@@ -40,7 +39,6 @@ public class ReverseLinkedList {
       head = next;
     }
     return prev;
-
   }
 
   public static ListNode reverseListRec(ListNode head) {

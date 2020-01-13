@@ -36,7 +36,7 @@ public class Task {
 
     // adding new interval with start time
     intervals.add(new Interval(time));
-    for (Iterator<Interval> iterator = intervals.listIterator(); iterator.hasNext();) {
+    for (Iterator<Interval> iterator = intervals.listIterator(); iterator.hasNext(); ) {
       Interval interval = iterator.next();
       // if new share happened in a second period summarize total and exchange quantities
       // set interval end time
@@ -61,6 +61,7 @@ public class Task {
   private int parseDate(String date) {
     return Integer.valueOf(date.substring(0, 2)) * 60 * 60 * 1000
         + Integer.valueOf(date.substring(3, 5)) * 60 * 1000
-        + Integer.valueOf(date.substring(6, 8)) * 1000 + Integer.valueOf(date.substring(9, 12));
+        + Integer.valueOf(date.substring(6, 8)) * 1000
+        + Integer.valueOf(date.substring(9, 12));
   }
 }

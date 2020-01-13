@@ -40,6 +40,4 @@ public class CallableMethodExample<V> implements Callable<V> {
     service.shutdown();
     System.out.println("<< main");
   }
-
-
 }

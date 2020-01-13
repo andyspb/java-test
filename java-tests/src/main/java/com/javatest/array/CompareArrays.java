@@ -13,15 +13,11 @@ public class CompareArrays {
     int arr2[] = {1, 2, 3};
     log.info("Compare objects:");
     if (arr1 == arr2) // Same as arr1.equals(arr2)
-      System.out.println("Same");
-    else
-      System.out.println("Not same");
+    System.out.println("Same");
+    else System.out.println("Not same");
 
     log.info("Compare with Arrays.equals:");
-    if (Arrays.equals(arr1, arr2))
-      System.out.println("Same");
-    else
-      System.out.println("Not same");
+    if (Arrays.equals(arr1, arr2)) System.out.println("Same");
+    else System.out.println("Not same");
   }
-
 }

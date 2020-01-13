@@ -17,19 +17,18 @@ public class Test {
 
     ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
     for (int i = 0; i < 500; i++) {
-      Callable<Integer> worker = new Callable<Integer>() {
-        @Override
-        public Integer call() throws Exception {
-          int number = counter.increment();
-          System.out.println(number);
-          return number;
-        }
-      };
+      Callable<Integer> worker =
+          new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+              int number = counter.increment();
+              System.out.println(number);
+              return number;
+            }
+          };
       Future<Integer> submit = executor.submit(worker);
       list.add(submit);
-
     }
-
 
     // This will make the executor accept no new threads
     // and finish all existing threads in the queue
@@ -49,8 +48,5 @@ public class Test {
     if (list.size() != set.size()) {
       throw new RuntimeException("Double-entries!!!");
     }
-
   }
-
-
 }

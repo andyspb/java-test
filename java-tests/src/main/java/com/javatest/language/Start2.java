@@ -13,6 +13,5 @@ public class Start2 {
     Long timebetweenStartEnd = endT - beginT;
     System.out.println("time: " + timebetweenStartEnd);
     System.out.println("countSum: " + countSum);
-
   }
 }

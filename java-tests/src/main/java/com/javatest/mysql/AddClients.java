@@ -32,8 +32,14 @@ public class AddClients {
       String[] emails = {"va@gmail.com", "34353453@hotmail.com", "ow@gmail.com", "kk@mail.ru"};
 
       for (int i = 0; i < names.length; ++i) {
-        query = "insert into clients (name, lastname,email) values('" + names[i] + "', '"
-            + lastnames[i] + "','" + emails[i] + "')";
+        query =
+            "insert into clients (name, lastname,email) values('"
+                + names[i]
+                + "', '"
+                + lastnames[i]
+                + "','"
+                + emails[i]
+                + "')";
         statement.executeUpdate(query);
       }
 

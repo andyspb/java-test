@@ -2,13 +2,10 @@ package com.javatest.hibernate;
 
 import javax.persistence.OneToOne;
 
-/**
- * @author Andrey Krutogolov
- **/
+/** @author Andrey Krutogolov */
 
-//@Entity
-//@Table(name="alien_address")
+// @Entity
+// @Table(name="alien_address")
 public class Address {
-  @OneToOne
-  private int alienId;
+  @OneToOne private int alienId;
 }

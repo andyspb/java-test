@@ -5,7 +5,6 @@ interface Message {
   String greet();
 }
 
-
 public class My_class {
   // method which accepts the object of interface Message
   public void displayMessage(Message m) {
@@ -17,9 +16,10 @@ public class My_class {
     My_class obj = new My_class();
 
     // Passing an anonymous inner class as an argument
-    Message msg = () -> {
-      return "Hello";
-    };
+    Message msg =
+        () -> {
+          return "Hello";
+        };
 
     obj.displayMessage(msg);
   }

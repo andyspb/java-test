@@ -24,5 +24,4 @@ public class ColorFactory extends AbstractFactory {
   Shape getShape(String shape) {
     return null;
   }
-
 }

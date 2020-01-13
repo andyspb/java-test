@@ -3,10 +3,7 @@ package com.javatest.hibernate;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-/**
- * @author Andrey Krutogolov
- **/
-
+/** @author Andrey Krutogolov */
 @Entity
 @Table(name = "alien_name")
 public class AlienName {
@@ -15,11 +12,11 @@ public class AlienName {
   @Column(name = "id")
   @NotNull
   private int id;
+
   private String name;
   private String surname;
 
-  public AlienName() {
-  }
+  public AlienName() {}
 
   public String getName() {
     return name;
@@ -58,12 +55,19 @@ public class AlienName {
 
   @Override
   public String toString() {
-    return "AlienName{" +
-        "name='" + name + '\'' +
-        ", surmame='" + surname + '\'' +
-        ", phone='" + phone + '\'' +
-        ", address='" + address + '\'' +
-        '}';
+    return "AlienName{"
+        + "name='"
+        + name
+        + '\''
+        + ", surmame='"
+        + surname
+        + '\''
+        + ", phone='"
+        + phone
+        + '\''
+        + ", address='"
+        + address
+        + '\''
+        + '}';
   }
 }
-

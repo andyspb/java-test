@@ -10,11 +10,9 @@ class BTreeNode {
   }
 }
 
-
 class Distance {
   int minDis = Integer.MAX_VALUE;
 }
-
 
 public class BinaryTreeClosetLeaf {
   BTreeNode root;
@@ -46,8 +44,11 @@ public class BinaryTreeClosetLeaf {
 
     BTreeNode x = tree.root.right;
 
-    System.out.println("The closest leaf to node with value " + x.key + " is at a distance of "
-        + tree.minimumDistance(tree.root, x));
+    System.out.println(
+        "The closest leaf to node with value "
+            + x.key
+            + " is at a distance of "
+            + tree.minimumDistance(tree.root, x));
   }
 
   void findLeafDown(BTreeNode root, int lev, Distance minDist) {
@@ -87,4 +88,3 @@ public class BinaryTreeClosetLeaf {
     return d.minDis;
   }
 }
-

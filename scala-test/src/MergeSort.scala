@@ -3,11 +3,11 @@ object MergeSort {
   def main(args: Array[String]) {
     println("MergeSort >>> ")
 
-    val a1 = List[Int](11, 2, 12, 1, 0, 23, 7)    
+    val a1 = List[Int](11, 2, 12, 1, 0, 23, 7)
     println(a1.mkString(" "))
     val l = mergeSort(a1)
     println(l.mkString(" "))
-     
+
     println("<<<")
   }
 

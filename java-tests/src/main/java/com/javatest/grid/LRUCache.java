@@ -14,7 +14,6 @@ class Node {
   }
 }
 
-
 public class LRUCache {
   int capacity;
   HashMap<Integer, Node> map = new HashMap<Integer, Node>();
@@ -79,6 +78,4 @@ public class LRUCache {
       map.put(key, created);
     }
   }
-
-
 }

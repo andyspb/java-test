@@ -24,7 +24,5 @@ public class Main2 {
       }
       System.out.println("We have " + running + " running threads. ");
     } while (running > 0);
-
   }
-
 }

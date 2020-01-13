@@ -28,7 +28,6 @@ class OuterClass {
   }
 }
 
-
 class Test {
   // How to create instance of static and non static nested class?
   public static void main(String args[]) {

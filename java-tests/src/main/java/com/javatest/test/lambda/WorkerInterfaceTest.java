@@ -7,14 +7,14 @@ public class WorkerInterfaceTest {
 
   public static void main(String[] args) {
 
-    execute(new WorkerInterface() {
-      @Override
-      public void doSomeWork() {
-        System.out.println("Worker via anonymous class");
-      }
-    });
+    execute(
+        new WorkerInterface() {
+          @Override
+          public void doSomeWork() {
+            System.out.println("Worker via anonymous class");
+          }
+        });
 
     execute(() -> System.out.println("Worker via Lambda"));
   }
-
 }

@@ -25,5 +25,4 @@ public class ShapeFactory2 extends AbstractFactory {
 
     return null;
   }
-
 }

@@ -31,7 +31,7 @@ public class ImplementStrStr {
 
     return -1;
   }
-  //calculate KMP array
+  // calculate KMP array
   public int[] getNext(String needle) {
     int[] next = new int[needle.length()];
     next[0] = 0;
@@ -62,7 +62,7 @@ public class ImplementStrStr {
     res = iss.strStr(haystack, "bba");
     System.out.println(res);
 
-    haystack =  "ababcaababcaabc";
+    haystack = "ababcaababcaabc";
     String needle = "ababcaabc";
     res = iss.strStr(haystack, needle);
     System.out.println(res);

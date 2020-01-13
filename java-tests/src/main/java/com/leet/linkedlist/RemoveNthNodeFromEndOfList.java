@@ -2,19 +2,19 @@ package com.leet.linkedlist;
 
 public class RemoveNthNodeFromEndOfList {
   public ListNode removeNthFromEnd(ListNode head, int n) {
-    if ( head == null) return null;
+    if (head == null) return null;
     ListNode dummy = new ListNode(0);
     dummy.next = head;
-    ListNode first  = dummy;
-    ListNode second  = dummy;
+    ListNode first = dummy;
+    ListNode second = dummy;
     for (int i = 0; i <= n; ++i) {
-       first = first.next;
+      first = first.next;
     }
-    while(first != null) {
+    while (first != null) {
       first = first.next;
       second = second.next;
     }
-    second.next  = second.next.next;
+    second.next = second.next.next;
     return dummy.next;
   }
 
@@ -30,7 +30,7 @@ public class RemoveNthNodeFromEndOfList {
     ll3.next = ll4;
     ll4.next = ll5;
     System.out.println(ll1);
-    rn.removeNthFromEnd(ll1,2);
+    rn.removeNthFromEnd(ll1, 2);
     System.out.println(ll1);
   }
 }

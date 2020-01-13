@@ -1,5 +1,4 @@
 package com.javatest.pattern.factory;
-
 ;
 
 public abstract class AbstractFactory {

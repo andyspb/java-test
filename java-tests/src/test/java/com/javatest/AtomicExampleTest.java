@@ -6,9 +6,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * @author Andrey Krutogolov
- **/
+/** @author Andrey Krutogolov */
 public class AtomicExampleTest {
   private MyObject myObject;
 
@@ -20,11 +18,10 @@ public class AtomicExampleTest {
 
   @Test
   public void testUpdate() {
-    myObject.setWhatImReading(new Book(
-        "Pro Java EE 5 Performance Management and Optimization"));
-    Assert.assertEquals("Incorrect book name",
+    myObject.setWhatImReading(new Book("Pro Java EE 5 Performance Management and Optimization"));
+    Assert.assertEquals(
+        "Incorrect book name",
         "Pro Java EE 5 Performance Management and Optimization",
         myObject.getWhatImReading().getName());
   }
-
 }

@@ -15,15 +15,12 @@ public class ProducerConcumerTest {
     p1.start();
     c1.start();
   }
-
 }
-
 
 class Item {
   int data;
   int size;
 }
-
 
 class RingBuffer {
   private int contents;
@@ -43,7 +40,8 @@ class RingBuffer {
     while (available == false) {
       try {
         wait();
-      } catch (InterruptedException e) {}
+      } catch (InterruptedException e) {
+      }
     }
     available = false;
     notifyAll();
@@ -54,14 +52,14 @@ class RingBuffer {
     while (available == true) {
       try {
         wait();
-      } catch (InterruptedException e) {}
+      } catch (InterruptedException e) {
+      }
     }
     contents = value;
     available = true;
     notifyAll();
   }
 }
-
 
 class Consumer extends Thread {
   private RingBuffer cubbyhole;
@@ -81,7 +79,6 @@ class Consumer extends Thread {
   }
 }
 
-
 class Producer extends Thread {
   private RingBuffer cubbyhole;
   private int number;
@@ -97,9 +94,8 @@ class Producer extends Thread {
       System.out.println("Producer #" + this.number + " put: " + i);
       try {
         sleep((int) (Math.random() * 100));
-      } catch (InterruptedException e) {}
+      } catch (InterruptedException e) {
+      }
     }
   }
-
 }
-

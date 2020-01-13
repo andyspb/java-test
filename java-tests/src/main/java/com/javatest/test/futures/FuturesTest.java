@@ -1,16 +1,11 @@
-/**
- *
- */
+/** */
 package com.javatest.test.futures;
 
 import java.util.concurrent.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * @author andy
- *
- */
+/** @author andy */
 public class FuturesTest {
 
   private static final Logger log = Logger.getLogger(FuturesTest.class.getName());
@@ -36,7 +31,6 @@ public class FuturesTest {
     Object factorial = future.get();
     System.out.println("Factorial of 1000000 is : " + factorial.toString());
     threadpool.shutdown();
-
   }
 
   private static class FactorialCalculator implements Callable {

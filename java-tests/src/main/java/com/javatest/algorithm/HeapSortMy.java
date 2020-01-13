@@ -9,7 +9,6 @@ public class HeapSortMy {
     int[] arr = {12, 2, 15, 56, 23, 78, 45, 34, 16, 91, 53, 27};
     System.out.print(Arrays.toString(arr) + '\n');
 
-
     heapsort(arr);
 
     System.out.println("-----------");
@@ -27,12 +26,9 @@ public class HeapSortMy {
       System.out.print("heapsort before: " + '\t' + "i:" + i + '\t' + Arrays.toString(arr) + '\n');
       downHeap(arr, i, arr.length);
       System.out.print("heapsort afer: " + '\t' + "i:" + i + '\t' + Arrays.toString(arr) + '\n');
-
-
     }
 
     System.out.print("before last downheap" + Arrays.toString(arr) + '\n');
-
 
     for (int i = arr.length - 1; i > 0; i--) {
       System.out.println("arr[" + 0 + "]=" + arr[0] + "  <-->  " + "arr[" + i + "]=" + arr[i]);

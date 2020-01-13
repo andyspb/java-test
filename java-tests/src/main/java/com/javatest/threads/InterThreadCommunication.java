@@ -24,7 +24,6 @@ public class InterThreadCommunication {
   }
 }
 
-
 class Producer extends Thread {
 
   private static final Logger log = Logger.getLogger(Producer.class.getName());
@@ -57,7 +56,6 @@ class Producer extends Thread {
     }
   }
 }
-
 
 class Consumer extends Thread {
 
@@ -95,5 +93,3 @@ class Consumer extends Thread {
     }
   }
 }
-
-

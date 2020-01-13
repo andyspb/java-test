@@ -2,9 +2,7 @@ package com.leet.array;
 
 import java.util.Arrays;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 
 // Given an array nums of n integers and an integer target, find three integers in nums such that
 // the sum is closest to target. Return the sum of the three integers. You may assume that each
@@ -33,7 +31,7 @@ public class ThreeSumClosest {
 
   public static void main(String[] args) {
     ThreeSumClosest tsc = new ThreeSumClosest();
-    int[] arr = new int[]{-1, 2, 1, -4};
+    int[] arr = new int[] {-1, 2, 1, -4};
     int res = tsc.threeSumClosest(arr, 1);
     System.out.println(res);
   }

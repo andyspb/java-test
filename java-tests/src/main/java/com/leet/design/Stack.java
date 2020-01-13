@@ -1,4 +1,5 @@
 package com.leet.design;
+
 class Node<T> {
   public T value;
   public Node<T> next;
@@ -10,6 +11,7 @@ class Node<T> {
 
 public class Stack<T> {
   public Node<T> top;
+
   public void push(int x) {
     if (top == null) {
       top = new Node(x);
@@ -26,5 +28,4 @@ public class Stack<T> {
     top = top.next;
     return value;
   }
-
 }

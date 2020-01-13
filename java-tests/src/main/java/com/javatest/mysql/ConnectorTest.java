@@ -1,5 +1,3 @@
 package com.javatest.mysql;
 
-public class ConnectorTest {
-
-}
+public class ConnectorTest {}

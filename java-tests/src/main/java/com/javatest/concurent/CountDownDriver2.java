@@ -2,9 +2,7 @@ package com.javatest.concurent;
 
 import java.util.concurrent.CountDownLatch;
 
-/**
- * @author Andrey Krutogolov
- **/
+/** @author Andrey Krutogolov */
 public class CountDownDriver2 {
   private static int N = 5;
 
@@ -13,12 +11,12 @@ public class CountDownDriver2 {
     CountDownLatch doneSignal = new CountDownLatch(N);
 
     for (int i = 0; i < N; ++i) // create and start threads
-      new Thread(new Worker(startSignal, doneSignal)).start();
+    new Thread(new Worker(startSignal, doneSignal)).start();
 
     System.out.println(" doSomethingElse();            // don't let run yet");
-    startSignal.countDown();      // let all threads proceed
+    startSignal.countDown(); // let all threads proceed
     System.out.println(" doSomethingElse();");
-    doneSignal.await();           // wait for all to finish
+    doneSignal.await(); // wait for all to finish
   }
 }
 

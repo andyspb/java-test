@@ -10,5 +10,4 @@ public class SingletonInitOnDemand {
   public static SingletonInitOnDemand getInstance() {
     return SingletonHolder.INSTANCE;
   }
-
 }

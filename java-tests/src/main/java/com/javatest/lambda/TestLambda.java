@@ -6,13 +6,14 @@ public class TestLambda {
     System.out.println("TestLamba main >>>");
 
     // Anonymous Runnable
-    Runnable r1 = new Runnable() {
+    Runnable r1 =
+        new Runnable() {
 
-      @Override
-      public void run() {
-        System.out.println("Hello world one!");
-      }
-    };
+          @Override
+          public void run() {
+            System.out.println("Hello world one!");
+          }
+        };
 
     // Lambda Runnable
     Runnable r2 = () -> System.out.println("Hello world two!");

@@ -1,9 +1,6 @@
 package com.javatest.spring;
 
-/**
- * @author andrey.krutogolov@gmail.com
- **/
-
+/** @author andrey.krutogolov@gmail.com */
 public class Student {
   private String name;
 

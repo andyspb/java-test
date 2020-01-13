@@ -2,13 +2,12 @@ package com.javatest.algorithm;
 
 public class SelectionSort {
   // Prints the array
-  void printArray(int arr[])
-  {
+  void printArray(int arr[]) {
     int n = arr.length;
-    for (int i=0; i<n; ++i)
-      System.out.print(arr[i]+" ");
+    for (int i = 0; i < n; ++i) System.out.print(arr[i] + " ");
     System.out.println();
   }
+
   public static void sort(int[] arr) {
     for (int i = 0; i < arr.length - 1; ++i) {
       int least = i;
@@ -23,10 +22,9 @@ public class SelectionSort {
     }
   }
   // Driver code to test above
-  public static void main(String args[])
-  {
+  public static void main(String args[]) {
     SelectionSort ob = new SelectionSort();
-    int arr[] = {64,25,12,22,11};
+    int arr[] = {64, 25, 12, 22, 11};
     System.out.println("Unsorted array");
     ob.printArray(arr);
     ob.sort(arr);

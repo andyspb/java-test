@@ -1,5 +1,3 @@
 package com.javatest.language;
 
-public class DefaultMethodTest2 {
-
-}
+public class DefaultMethodTest2 {}

@@ -8,7 +8,6 @@ public class MainChat {
   }
 }
 
-
 class Chat {
   boolean flag = false;
 
@@ -40,7 +39,6 @@ class Chat {
   }
 }
 
-
 class T1 implements Runnable {
   Chat m;
   String[] s1 = {"Hello Jam", "How are you ?", "I am also doing fine!"};
@@ -57,7 +55,6 @@ class T1 implements Runnable {
     }
   }
 }
-
 
 class T2 implements Runnable {
   Chat m;

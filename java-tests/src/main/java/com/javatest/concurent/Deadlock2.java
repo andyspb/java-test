@@ -3,7 +3,6 @@ package com.javatest.concurent;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class Deadlock2 {
   private static final Logger log = Logger.getLogger(Deadlock2.class.getName());
 
@@ -15,17 +14,21 @@ public class Deadlock2 {
 
     Deadlock2 d = new Deadlock2();
 
-    Thread t1 = new Thread(new Runnable() {
-      public void run() {
-        d.method1();
-      }
-    });
+    Thread t1 =
+        new Thread(
+            new Runnable() {
+              public void run() {
+                d.method1();
+              }
+            });
 
-    Thread t2 = new Thread(new Runnable() {
-      public void run() {
-        d.method2();
-      }
-    });
+    Thread t2 =
+        new Thread(
+            new Runnable() {
+              public void run() {
+                d.method2();
+              }
+            });
 
     t1.start();
     t2.start();
@@ -60,6 +63,4 @@ public class Deadlock2 {
       }
     }
   }
-
 }
-

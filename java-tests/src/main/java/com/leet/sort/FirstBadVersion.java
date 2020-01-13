@@ -24,7 +24,7 @@ public class FirstBadVersion extends VersionControl {
   public static void main(String[] args) {
     //
     FirstBadVersion fb = new FirstBadVersion();
-    int[] nums = new int[] {1,2,3,4,5,6};
+    int[] nums = new int[] {1, 2, 3, 4, 5, 6};
     int badVersion = fb.firstBadVersion(5);
     System.out.println(badVersion);
   }

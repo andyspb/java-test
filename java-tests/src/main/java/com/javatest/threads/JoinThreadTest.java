@@ -7,16 +7,13 @@ class ThreadJoining extends Thread {
       try {
         Thread.sleep(500);
         System.out.println("Current Thread: " + Thread.currentThread().getName());
-      }
-
-      catch (Exception ex) {
+      } catch (Exception ex) {
         System.out.println("Exception has" + " been caught" + ex);
       }
       System.out.println(i);
     }
   }
 }
-
 
 public class JoinThreadTest {
   public static void main(String[] args) {
@@ -34,9 +31,7 @@ public class JoinThreadTest {
     try {
       System.out.println("Current Thread: " + Thread.currentThread().getName());
       t1.join();
-    }
-
-    catch (Exception ex) {
+    } catch (Exception ex) {
       System.out.println("Exception has " + "been caught" + ex);
     }
 
@@ -47,9 +42,7 @@ public class JoinThreadTest {
     try {
       System.out.println("Current Thread: " + Thread.currentThread().getName());
       t2.join();
-    }
-
-    catch (Exception ex) {
+    } catch (Exception ex) {
       System.out.println("Exception has been" + " caught" + ex);
     }
 

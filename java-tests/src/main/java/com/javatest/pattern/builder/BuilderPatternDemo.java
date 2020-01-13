@@ -15,5 +15,4 @@ public class BuilderPatternDemo {
     nonVegMeal.showItems();
     System.out.println("Total Cost: " + nonVegMeal.getCost());
   }
-
 }

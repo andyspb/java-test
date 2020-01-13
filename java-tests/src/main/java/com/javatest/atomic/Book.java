@@ -1,13 +1,10 @@
 package com.javatest.atomic;
 
-/**
- * @author Andrey Krutogolov
- **/
+/** @author Andrey Krutogolov */
 public class Book {
   private String name;
 
-  public Book() {
-  }
+  public Book() {}
 
   public Book(String name) {
     this.name = name;

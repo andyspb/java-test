@@ -15,9 +15,11 @@ public class StartVsRunCall {
 
     @Override
     public void run() {
-      System.out.println("Caller: " + caller + " and code on this Thread is executed by : "
-          + Thread.currentThread().getName());
-
+      System.out.println(
+          "Caller: "
+              + caller
+              + " and code on this Thread is executed by : "
+              + Thread.currentThread().getName());
     }
   }
 
@@ -29,8 +31,5 @@ public class StartVsRunCall {
 
     startThread.start(); // calling start method of Thread - will execute in new Thread
     runThread.run(); // calling run method of Thread - will execute in current Thread
-
   }
-
 }
-

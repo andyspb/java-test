@@ -9,13 +9,12 @@ class Entry {
   Entry right;
 }
 
-
 public class LRUcash {
 
   HashMap<Integer, Entry> hashmap;
   Entry start, end;
   int LRU_SIZE = 4; // Here i am setting 4 to test the LRU cache
-                    // implementation, it can make be dynamic
+  // implementation, it can make be dynamic
 
   public LRUcash() {
     hashmap = new HashMap<Integer, Entry>();
@@ -46,7 +45,7 @@ public class LRUcash {
       newnode.value = value;
       newnode.key = key;
       if (hashmap.size() > LRU_SIZE) // We have reached maxium size so need to make room for new
-                                     // element.
+      // element.
       {
         hashmap.remove(end.key);
         removeNode(end);
@@ -97,6 +96,5 @@ public class LRUcash {
     System.out.println(lrucache.getEntry(1));
     System.out.println(lrucache.getEntry(10));
     System.out.println(lrucache.getEntry(15));
-
   }
 }

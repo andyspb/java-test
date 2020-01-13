@@ -24,8 +24,7 @@ public class ShellSort {
         // shift earlier gap-sorted elements up until
         // the correct location for a[i] is found
         int j;
-        for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
-          arr[j] = arr[j - gap];
+        for (j = i; j >= gap && arr[j - gap] > temp; j -= gap) arr[j] = arr[j - gap];
 
         // put temp (the original a[i]) in its correct
         // location
@@ -48,14 +47,11 @@ public class ShellSort {
     System.out.println("Array after sorting");
     printArray(arr);
     log.log(Level.INFO, "<<<");
-
   }
 
   static void printArray(int arr[]) {
     int n = arr.length;
-    for (int i = 0; i < n; ++i)
-      System.out.print(arr[i] + " ");
+    for (int i = 0; i < n; ++i) System.out.print(arr[i] + " ");
     System.out.println();
   }
-
 }

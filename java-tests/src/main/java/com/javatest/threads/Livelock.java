@@ -20,6 +20,7 @@ public class Livelock {
       System.out.printf("%s has eaten!", owner.name);
     }
   }
+
   static class Diner {
     private String name;
     private boolean isHungry;
@@ -71,18 +72,22 @@ public class Livelock {
 
     final Spoon spoon = new Spoon(husband);
 
-    new Thread(new Runnable() {
-      @Override
-      public void run() {
-        husband.eatWith(spoon, wife);
-      }
-    }).start();
+    new Thread(
+            new Runnable() {
+              @Override
+              public void run() {
+                husband.eatWith(spoon, wife);
+              }
+            })
+        .start();
 
-    new Thread(new Runnable() {
-      @Override
-      public void run() {
-        wife.eatWith(spoon, husband);
-      }
-    }).start();
+    new Thread(
+            new Runnable() {
+              @Override
+              public void run() {
+                wife.eatWith(spoon, husband);
+              }
+            })
+        .start();
   }
 }

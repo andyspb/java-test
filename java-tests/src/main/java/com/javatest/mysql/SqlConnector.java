@@ -3,9 +3,7 @@ package com.javatest.mysql;
 public class SqlConnector {
   private static volatile SqlConnector instance;
 
-  private SqlConnector() {
-
-  }
+  private SqlConnector() {}
 
   public static SqlConnector getInstance() {
     if (null == instance) {

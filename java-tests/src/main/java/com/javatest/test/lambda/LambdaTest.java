@@ -16,5 +16,4 @@ public class LambdaTest {
         stringList.stream().filter(value -> value.startsWith("Cat")).collect(Collectors.toList());
     resultList.forEach(value -> System.out.println(value));
   }
-
 }

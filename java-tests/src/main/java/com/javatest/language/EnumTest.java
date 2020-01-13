@@ -1,9 +1,10 @@
 package com.javatest.language;
 
 enum Color {
-  RED, GREEN, BLUE;
+  RED,
+  GREEN,
+  BLUE;
 }
-
 
 public class EnumTest {
   public static void main(String[] args) {

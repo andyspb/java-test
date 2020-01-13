@@ -2,9 +2,7 @@ package com.javatest.hibernate;
 
 import javax.persistence.*;
 
-/**
- * @author Andrey Krutogolov
- */
+/** @author Andrey Krutogolov */
 @Entity
 @Table(name = "order")
 public class Order {
@@ -43,8 +41,7 @@ public class Order {
   @Column(name = "customer_id")
   private int customerId;
 
-  public Order() {
-  }
+  public Order() {}
 
   public Order(int orderId, int amount, int customerId) {
     this.orderId = orderId;

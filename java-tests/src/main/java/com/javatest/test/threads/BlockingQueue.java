@@ -29,5 +29,4 @@ public class BlockingQueue<T> {
     notify();
     return item;
   }
-
 }

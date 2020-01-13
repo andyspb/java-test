@@ -23,7 +23,6 @@ public class Trade {
     return sb.toString();
   }
 
-
   public void addWindowTrade(Trade trade, long window) {
     // trades only within a window
     if (trade.time < time + window) {
@@ -46,7 +45,6 @@ public class Trade {
     }
     return res;
   }
-
 
   public Trade(long time, double price, int size, String exchange) {
     this.time = time;
@@ -90,5 +88,4 @@ public class Trade {
   public void setExchange(String symbol) {
     this.exchange = symbol;
   }
-
 }

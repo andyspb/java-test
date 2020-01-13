@@ -36,6 +36,5 @@ public class CsvToTradeParcer {
     Trade trade = new Trade(time, price, size, symbol);
 
     return trade;
-
   }
 }

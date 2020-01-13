@@ -28,6 +28,5 @@ public class ParallelExample2 {
     System.out.println("Parallel...");
 
     testValues.parallelStream().forEach(System.out::println);
-
   }
 }

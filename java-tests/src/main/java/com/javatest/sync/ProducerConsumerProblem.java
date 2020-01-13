@@ -21,9 +21,7 @@ public class ProducerConsumerProblem {
     cons.start();
     System.out.println("ProducerConsumerProblem <<< ");
   }
-
 }
-
 
 // Producer Class in java
 class Producer_Sync implements Runnable {
@@ -45,9 +43,7 @@ class Producer_Sync implements Runnable {
       }
     }
   }
-
 }
-
 
 // Consumer Class in Java
 class Consumer_Sync implements Runnable {

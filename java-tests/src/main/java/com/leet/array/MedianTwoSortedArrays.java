@@ -17,7 +17,8 @@ public class MedianTwoSortedArrays {
     }
   }
 
-  private double findkthItemInSortedArrays(int[] nums1, int start1, int[] nums2, int start2, int k) {
+  private double findkthItemInSortedArrays(
+      int[] nums1, int start1, int[] nums2, int start2, int k) {
     int n = nums1.length - start1;
     int m = nums2.length - start2;
     if (k == 0 || (n + m) < k) {

@@ -21,12 +21,9 @@ public class StringToInteger {
       result = result * 10 + (str.charAt(i) - '0');
       ++i;
     }
-    if (flg == '-')
-      result = -result;
-    if(result>Integer.MAX_VALUE)
-      return  Integer.MAX_VALUE;
-    if (result< Integer.MIN_VALUE)
-      return Integer.MIN_VALUE;
+    if (flg == '-') result = -result;
+    if (result > Integer.MAX_VALUE) return Integer.MAX_VALUE;
+    if (result < Integer.MIN_VALUE) return Integer.MIN_VALUE;
     return (int) result;
   }
 
@@ -37,6 +34,5 @@ public class StringToInteger {
     System.out.println(sti.myAtoi("4193 test"));
     System.out.println(sti.myAtoi("test 4193"));
     System.out.println(sti.myAtoi("-91283472332"));
-
   }
 }

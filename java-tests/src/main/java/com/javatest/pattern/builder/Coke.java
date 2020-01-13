@@ -11,5 +11,4 @@ public class Coke extends ColdDrink {
   public float price() {
     return 35.0f;
   }
-
 }

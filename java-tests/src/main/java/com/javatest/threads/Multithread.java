@@ -15,15 +15,14 @@ class MultithreadThreadDemo extends Thread {
   @Override
   public void run() {
     try {
-      System.out
-          .println("Thread " + Thread.currentThread().getId() + " is running, localId:" + localId);
+      System.out.println(
+          "Thread " + Thread.currentThread().getId() + " is running, localId:" + localId);
 
     } catch (Exception e) {
       System.out.println("Exception is caught");
     }
   }
 }
-
 
 class MultithreadingRunnableDemo implements Runnable {
   private int localId;
@@ -36,8 +35,8 @@ class MultithreadingRunnableDemo implements Runnable {
   public void run() {
     try {
       // Displaying the thread that is running
-      System.out
-          .println("Thread " + Thread.currentThread().getId() + " is running, localId:" + localId);
+      System.out.println(
+          "Thread " + Thread.currentThread().getId() + " is running, localId:" + localId);
 
     } catch (Exception e) {
       // Throwing an exception
@@ -45,7 +44,6 @@ class MultithreadingRunnableDemo implements Runnable {
     }
   }
 }
-
 
 // Main Class
 public class Multithread {
@@ -61,8 +59,8 @@ public class Multithread {
       object.start();
       try {
         Thread.currentThread().join(10);
-      } catch (Exception e) {}
-
+      } catch (Exception e) {
+      }
     }
 
     log.log(Level.INFO, "MultithreadingRunnableDemo >>>");
@@ -72,8 +70,8 @@ public class Multithread {
       object.start();
       try {
         Thread.currentThread().join(10);
-      } catch (Exception e) {}
+      } catch (Exception e) {
+      }
     }
-
   }
 }

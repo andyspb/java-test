@@ -10,5 +10,4 @@ public class TestSimpleWaitNotify {
     // TODO Auto-generated method stub
 
   }
-
 }

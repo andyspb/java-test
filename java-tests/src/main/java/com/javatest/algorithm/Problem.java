@@ -15,5 +15,4 @@ public class Problem {
   public int[] getList() {
     return list;
   }
-
 }

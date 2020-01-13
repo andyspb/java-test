@@ -16,6 +16,5 @@ public class Primer1 {
     System.out.println("MaxValue=" + maxValue);
     Optional<Integer> minValue = testValues.stream().min(Integer::compareTo);
     System.out.println("MinValue=" + minValue);
-
   }
 }

@@ -1,5 +1,2 @@
-/**
- * @author andy
- *
- */
+/** @author andy */
 package com.javatest.parallel;

@@ -9,6 +9,7 @@ class Elem {
     this.value = value;
     this.min = min;
   }
+
   public Elem(int value) {
     this.value = value;
   }
@@ -16,7 +17,9 @@ class Elem {
 
 public class MinStack {
   public Elem top;
+
   public MinStack() {}
+
   public void push(int x) {
     if (top == null) {
       top = new Elem(x, x);

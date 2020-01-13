@@ -7,7 +7,6 @@ public class HeapSort {
 
   private static final Logger log = Logger.getLogger(HeapSort.class.getName());
 
-
   public static void main(String args[]) {
     int arr[] = {12, 11, 13, 5, 6, 7};
     System.out.println(Arrays.toString(arr) + '\n');
@@ -22,8 +21,7 @@ public class HeapSort {
     int arr_length = arr.length;
 
     // Build heap (rearrange array)
-    for (int i = arr_length >> 1; i >= 0; --i)
-      heapify(arr, arr_length, i);
+    for (int i = arr_length >> 1; i >= 0; --i) heapify(arr, arr_length, i);
 
     // One by one extract an element from heap
     for (int i = arr_length - 1; i >= 0; i--) {
@@ -64,5 +62,4 @@ public class HeapSort {
       heapify(arr, n, largest);
     }
   }
-
 }

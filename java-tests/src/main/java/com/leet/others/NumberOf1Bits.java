@@ -13,8 +13,7 @@ public class NumberOf1Bits {
 
   public int hammingWeightRec(int n) {
     if (n == 0) return 0;
-    else
-    return (n & 1) + hammingWeightRec(n >> 1);
+    else return (n & 1) + hammingWeightRec(n >> 1);
   }
 
   public static void main(String[] args) {

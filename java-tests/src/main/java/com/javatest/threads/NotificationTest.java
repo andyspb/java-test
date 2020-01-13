@@ -14,27 +14,29 @@ public class NotificationTest {
   public static void main(String args[]) throws InterruptedException {
     final NotificationTest test = new NotificationTest();
 
-    Runnable waitTask = new Runnable() {
+    Runnable waitTask =
+        new Runnable() {
 
-      @Override
-      public void run() {
-        try {
-          test.shouldGo();
-        } catch (InterruptedException ex) {
-          Logger.getLogger(NotificationTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        System.out.println(Thread.currentThread() + " finished Execution");
-      }
-    };
+          @Override
+          public void run() {
+            try {
+              test.shouldGo();
+            } catch (InterruptedException ex) {
+              Logger.getLogger(NotificationTest.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            System.out.println(Thread.currentThread() + " finished Execution");
+          }
+        };
 
-    Runnable notifyTask = new Runnable() {
+    Runnable notifyTask =
+        new Runnable() {
 
-      @Override
-      public void run() {
-        test.go();
-        System.out.println(Thread.currentThread() + " finished Execution");
-      }
-    };
+          @Override
+          public void run() {
+            test.go();
+            System.out.println(Thread.currentThread() + " finished Execution");
+          }
+        };
 
     Thread t1 = new Thread(waitTask, "WaitThread_1"); // will wait
     Thread t2 = new Thread(waitTask, "WaitThread_2"); // will wait
@@ -51,7 +53,6 @@ public class NotificationTest {
 
     // starting notifying thread
     t4.start();
-
   }
 
   /*
@@ -78,7 +79,5 @@ public class NotificationTest {
       // notify(); // only one out of three waiting thread WT1, WT2,WT3 will woke up
       notifyAll(); // all waiting thread WT1, WT2,WT3 will woke up
     }
-
   }
-
 }

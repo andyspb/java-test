@@ -22,9 +22,9 @@ public class ShuffleArray {
 
   /** Returns a random shuffling of the array. */
   public int[] shuffle() {
-    for(int i=0; i<shuffle.length; i++){
-      int x = rand.nextInt(shuffle.length-i);
-      int idx = x+i;
+    for (int i = 0; i < shuffle.length; i++) {
+      int x = rand.nextInt(shuffle.length - i);
+      int idx = x + i;
 
       int tmp = shuffle[idx];
       shuffle[idx] = shuffle[i];
@@ -32,9 +32,10 @@ public class ShuffleArray {
     }
     return shuffle;
   }
+
   public static void main(String[] args) {
     //
-    int[] nums = new int[]{1,2,3};
+    int[] nums = new int[] {1, 2, 3};
     ShuffleArray obj = new ShuffleArray(nums);
     int[] param_1 = obj.reset();
     int[] param_2 = obj.shuffle();

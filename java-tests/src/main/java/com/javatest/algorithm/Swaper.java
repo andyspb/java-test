@@ -2,7 +2,6 @@ package com.javatest.algorithm;
 
 import java.util.logging.Logger;
 
-
 public class Swaper {
   private static final Logger log = Logger.getLogger(Swaper.class.getName());
 
@@ -23,5 +22,4 @@ public class Swaper {
 
     log.info("Result: a=" + a + " b=" + b);
   }
-
 }

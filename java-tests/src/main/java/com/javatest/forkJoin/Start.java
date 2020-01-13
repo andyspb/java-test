@@ -17,6 +17,5 @@ public class Start {
     Long endT = System.nanoTime();
     Long timebetweenStartEnd = endT - beginT;
     System.out.println("=====time========" + timebetweenStartEnd);
-
   }
 }

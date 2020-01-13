@@ -12,7 +12,6 @@ public class ClientServerTest {
     System.setProperty("java.util.logging.config.file", path);
   }
 
-
   private static final Logger log = Logger.getLogger(ClientServerTest.class.getName());
 
   public static final int PORT = 5000;
@@ -23,7 +22,6 @@ public class ClientServerTest {
     log.info(" >>> main()");
     int port = PORT;
 
-
     Thread serverThread = new Thread(new ServerRun(port));
     serverThread.start();
 
@@ -31,11 +29,8 @@ public class ClientServerTest {
 
     Thread clientThread = new Thread(new ClientRun(port));
     clientThread.start();
-
   }
-
 }
-
 
 class ServerRun implements Runnable {
   private static final Logger log = Logger.getLogger(ServerRun.class.getName());
@@ -55,7 +50,6 @@ class ServerRun implements Runnable {
     }
   }
 }
-
 
 class ClientRun implements Runnable {
   private static final Logger log = Logger.getLogger(ClientRun.class.getName());

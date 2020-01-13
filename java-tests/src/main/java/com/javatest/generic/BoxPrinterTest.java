@@ -16,7 +16,6 @@ class BoxPrinter<T> {
   }
 }
 
-
 class BoxPrinterTest {
   public static void main(String[] args) {
     BoxPrinter<Integer> value1 = new BoxPrinter<Integer>(new Integer(10));

@@ -7,6 +7,7 @@ class MyThread extends Thread {
   private static final Logger log = Logger.getLogger(MyThread.class.getName());
 
   private String name;
+
   @SuppressWarnings("unused")
   private MyThread thread;
 
@@ -19,9 +20,7 @@ class MyThread extends Thread {
   public void run() {
     log.log(Level.INFO, "From thread: " + name);
   }
-
 }
-
 
 public class ThreeThreadsTest {
 
@@ -43,12 +42,9 @@ public class ThreeThreadsTest {
       t1.join();
       t2.join();
       t3.join();
-    } catch (InterruptedException e) {}
-
-
+    } catch (InterruptedException e) {
+    }
 
     log.log(Level.INFO, "<<<");
-
   }
-
 }

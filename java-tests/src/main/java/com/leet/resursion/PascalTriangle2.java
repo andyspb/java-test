@@ -11,8 +11,7 @@ import java.util.List;
 /** @author Andrey Krutogolov */
 public class PascalTriangle2 {
   public List<Integer> getRow(int rowIndex) {
-    if (rowIndex < 0) return
-        new ArrayList<>();
+    if (rowIndex < 0) return new ArrayList<>();
     Integer[] ans = new Integer[rowIndex + 1];
     for (int level = 1; level <= rowIndex + 1; level++) {
       for (int row = level - 1; row >= 0; row--) {

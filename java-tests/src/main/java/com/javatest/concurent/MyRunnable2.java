@@ -1,7 +1,5 @@
 package com.javatest.concurent;
 
-
-
 public class MyRunnable2 implements Runnable {
   private final long countUtil;
 

@@ -7,7 +7,6 @@ public class Test {
     int y = 4;
     System.out.println(y + " " + (y >> 1));
 
-
     int xx = -1;
 
     System.out.println(xx + " " + (xx >>> 29)); // The value of 'x>>>29' is 00...0111

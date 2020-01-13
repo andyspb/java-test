@@ -13,11 +13,10 @@ class ListNode {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     ListNode node = this;
-    while(node!= null) {
+    while (node != null) {
       sb.append(val).append(" ");
       node = node.next;
     }
     return sb.toString();
   }
-
 }

@@ -24,8 +24,6 @@ final class Test {
   }
 }
 
-
-
 public class DeadlockTest {
   private static final Logger log = Logger.getLogger(Deadlock.class.getName());
 
@@ -40,21 +38,25 @@ public class DeadlockTest {
 
     final Test alphonse = new Test("alphonse");
     final Test gaston = new Test("gaston");
-    Thread t1 = new Thread(new Runnable() {
-      // @Override
-      @Override
-      public void run() {
-        alphonse.bow(gaston);
-      }
-    });
+    Thread t1 =
+        new Thread(
+            new Runnable() {
+              // @Override
+              @Override
+              public void run() {
+                alphonse.bow(gaston);
+              }
+            });
 
-    Thread t2 = new Thread(new Runnable() {
-      // @Override
-      @Override
-      public void run() {
-        gaston.bow(alphonse);
-      }
-    });
+    Thread t2 =
+        new Thread(
+            new Runnable() {
+              // @Override
+              @Override
+              public void run() {
+                gaston.bow(alphonse);
+              }
+            });
 
     t1.start();
     t2.start();
@@ -68,7 +70,5 @@ public class DeadlockTest {
     }
 
     log.log(Level.INFO, ">>>");
-
   }
-
 }

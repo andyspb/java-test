@@ -19,25 +19,25 @@ public class DeadlockTest {
           }
         }
       };
-  Thread t2 = new Thread("My Thread 2") {
-    public void run() {
-      System.out.println("Start thread: " + this.getName());
-      while (true) {
-        synchronized (str2) {
-          System.out.println("Monitor: " + str2);
-          synchronized (str1) {
-            System.out.println("Monitor: " + str1);
-            System.out.println(str2 + str1);
+  Thread t2 =
+      new Thread("My Thread 2") {
+        public void run() {
+          System.out.println("Start thread: " + this.getName());
+          while (true) {
+            synchronized (str2) {
+              System.out.println("Monitor: " + str2);
+              synchronized (str1) {
+                System.out.println("Monitor: " + str1);
+                System.out.println(str2 + str1);
+              }
+            }
           }
         }
-      }
-    }
-  };
+      };
 
   public static void main(String a[]) {
     DeadlockTest mdl = new DeadlockTest();
     mdl.t1.start();
     mdl.t2.start();
   }
-
 }

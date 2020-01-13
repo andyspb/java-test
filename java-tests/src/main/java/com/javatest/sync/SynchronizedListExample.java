@@ -11,7 +11,7 @@ public class SynchronizedListExample {
 
     List<String> syncList = Collections.synchronizedList(new ArrayList<String>());
 
-    syncList.add("one");// no need to synchronize here
+    syncList.add("one"); // no need to synchronize here
     syncList.add("two");
     syncList.add("three");
     String str = syncList.get(0); // it is ok here => no need to synchronize
@@ -25,7 +25,5 @@ public class SynchronizedListExample {
         System.out.println("item: " + iterator.next());
       }
     }
-
   }
-
 }
