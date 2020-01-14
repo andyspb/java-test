@@ -4,16 +4,16 @@ public class NewYearChaos {
 
   static void minimumBribes(int[] q) {
     int bribe = 0;
-    boolean chaotic = false;
     int l = q.length;
-    for (int i = 0; i < l; ++i) {
+    for (int i = l -1; i >=0; --i) {
       if (q[i] - (i + 1) > 2) {
-        chaotic = true;
-        break;
+        System.out.println("Too chaotic");
+        return;
       }
-      for (int j = Math.max(0, q[i] - 2); j < i; ++j) if (q[j] > q[i]) bribe++;
+      for (int j = Math.max(0, q[i] - 2); j < i; ++j)
+        if (q[j] > q[i]) ++bribe;
     }
-    System.out.println(chaotic ? "Too chaotic" : bribe);
+    System.out.println(bribe);
   }
 
   public static void main(String[] args) {
