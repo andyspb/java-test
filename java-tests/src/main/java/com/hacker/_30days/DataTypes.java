@@ -20,7 +20,7 @@ public class DataTypes {
 
     System.out.println(i + ii);
     DecimalFormat df = new DecimalFormat("0.0");
-    
+
     System.out.println(df.format(d + dd));
     System.out.println(s + ss);
 

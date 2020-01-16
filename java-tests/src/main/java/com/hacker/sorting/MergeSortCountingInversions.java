@@ -3,21 +3,19 @@ package com.hacker.sorting;
 public class MergeSortCountingInversions {
 
   static long countInversions(int[] arr) {
-    if (arr == null || arr.length <=1 )
-      return 0;
+    if (arr == null || arr.length <= 1) return 0;
     return new MergeSort().sort(arr);
   }
 
   public static void main(String[] args) {
-    int[] arr1 = new int[] {1,1,1,2,2};
-    int[] arr2 = new int[] {2,1,3,1,2};
+    int[] arr1 = new int[] {1, 1, 1, 2, 2};
+    int[] arr2 = new int[] {2, 1, 3, 1, 2};
 
     MergeSort ms = new MergeSort();
-    long swaps1  = countInversions(arr1);
-    long swaps2  = countInversions(arr2);
+    long swaps1 = countInversions(arr1);
+    long swaps2 = countInversions(arr2);
     System.out.println(swaps1);
     System.out.println(swaps2);
-
   }
 
   private static class MergeSort {

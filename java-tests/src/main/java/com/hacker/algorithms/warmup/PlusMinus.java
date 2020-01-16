@@ -17,9 +17,9 @@ public class PlusMinus {
         ++counterZero;
       }
     }
-    System.out.println(df.format((double)counterPlus/arr.length));
-    System.out.println(df.format((double)counterMinus/arr.length));
-    System.out.println(df.format((double)counterZero/arr.length));
+    System.out.println(df.format((double) counterPlus / arr.length));
+    System.out.println(df.format((double) counterMinus / arr.length));
+    System.out.println(df.format((double) counterZero / arr.length));
   }
 
   public static void main(String[] args) {

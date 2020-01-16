@@ -3,7 +3,7 @@ package com.hacker.algorithms.dynamicrpogramming;
 import java.util.Arrays;
 
 // python
-//def angryChildren(k, packets):
+// def angryChildren(k, packets):
 //    packets.sort();
 //    print(packets);
 //    sum_ =0;
@@ -23,7 +23,6 @@ import java.util.Arrays;
 //    sum_ = sum_ + packets[i];
 //
 //    return min_diff;
-
 
 public class AngryChildren2 {
   static long angryChildren(int k, int[] packets) {

@@ -11,13 +11,13 @@ public class LetsReview {
       sArr[i] = sc.next();
     }
     sc.close();
-    for(int j = 0 ; j < num; ++j) {
-      int l= sArr[j].length();
-      for (int i = 0;i<l; i+=2) {
+    for (int j = 0; j < num; ++j) {
+      int l = sArr[j].length();
+      for (int i = 0; i < l; i += 2) {
         System.out.print(sArr[j].charAt(i));
       }
       System.out.print(' ');
-      for (int i = 1;i<l; i+=2) {
+      for (int i = 1; i < l; i += 2) {
         System.out.print(sArr[j].charAt(i));
       }
       System.out.println();
