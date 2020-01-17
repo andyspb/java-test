@@ -40,21 +40,21 @@ abstract class Frame {
   protected String type;
   protected Frame next;
 
-  protected Frame(String ballStr) {
-    this.frameStr = ballStr;
+  protected Frame(String ballsStr) {
+    this.frameStr = ballsStr;
     if (frameStr == null || frameStr.length() == 0 || frameStr.length() > 2) {
       isValid = false;
     }
-    for (char c : ballStr.toCharArray()) {
+    for (char c : ballsStr.toCharArray()) {
       if (!Ball.isValidChar(c)) {
         isValid = false;
         break;
       }
     }
-    initBall(ballStr);
+    addBalls(ballsStr);
   }
 
-  abstract void initBall(String ballStr);
+  abstract void addBalls(String ballStr);
 
   public int countScore() {
     return 0;

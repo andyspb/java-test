@@ -4,11 +4,30 @@ import java.util.LinkedList;
 
 public class Game {
   private LinkedList<Frame> frames = new LinkedList<>();
-
   private boolean isValid = true;
-  Frame prevFrame = null;
+  private Frame prevFrame = null;
 
-  public Game(String usualFrames) {
+  public static Game build(String gameStr) {
+    if (gameStr == null || gameStr.length() < 23 ) {
+      return null;
+    }
+    String[] games = gameStr.split("\\|\\|");
+    if (games.length < 1 || games.length > 2) {
+      System.out.println("An invalid game :" + gameStr);
+      return null;
+    }
+    Game game = new Game(games[0]);
+    if (!game.isValid) {
+      return null;
+    }
+    if (games.length > 1 && games[1].length() > 0) {
+      if (!game.addBonusFrame(games[1]))
+        return null;
+    }
+    return game;
+  }
+
+  private Game(String usualFrames) {
     String[] frames = usualFrames.split("\\|");
     int counter = 0;
     for (String frameStr : frames) {
@@ -17,21 +36,28 @@ public class Game {
         isValid = false;
         return;
       }
-
-      Frame frame = new UsualFrame(frameStr);
+      Frame frame = new NormalFrame(frameStr);
       this.frames.add(frame);
-      if (prevFrame != null) prevFrame.next = frame;
+      if (prevFrame != null) {
+        prevFrame.next = frame;
+      }
       prevFrame = frame;
     }
   }
 
-  public void addBonusFrame(String ballsStr) {
+  private boolean addBonusFrame(String ballsStr) {
     Frame frame = new BonusFrame(ballsStr);
+    if (!frame.isValid()) {
+      return  false;
+    }
     frames.add(frame);
-    if (prevFrame != null) prevFrame.next = frame;
+    if (prevFrame != null) {
+      prevFrame.next = frame;
+    }
+    return true;
   }
 
-  public int score() {
+  public int getScore() {
     if (!isValid) return -1;
     int totalScore = 0;
     for (Frame frame : frames) {

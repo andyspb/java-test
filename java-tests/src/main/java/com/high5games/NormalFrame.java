@@ -1,27 +1,31 @@
 package com.high5games;
 
-public class UsualFrame extends Frame {
+class NormalFrame extends Frame {
 
-  protected UsualFrame(String ballStr) {
-    super(ballStr);
+  protected NormalFrame(String ballsStr) {
+    super(ballsStr);
   }
 
   @Override
-  void initBall(String ballStr) {
-    int length = ballStr.length();
+  void addBalls(String ballsStr) {
+    if (ballsStr == null || ballsStr.length()==0 || ballsStr.length()>2) {
+      isValid = false;
+      return;
+    }
+    int length = ballsStr.length();
     if (length == 1) {
-      if ("X".equals(ballStr)) { // strike
-        this.ball1 = new Ball(10, ballStr);
+      if ("X".equals(ballsStr)) { // strike
+        this.ball1 = new Ball(MAX_SCORE, ballsStr);
         this.ball2 = this.ball1;
         score = MAX_SCORE;
         type = STRIKE;
         return;
       } else {
-        isValid = true;
+        isValid = false;
         return;
       }
     } else if (length == 2) {
-      Character ch0 = ballStr.charAt(0);
+      Character ch0 = ballsStr.charAt(0);
       if (Character.isDigit(ch0)) {
         int value = Integer.parseInt(String.valueOf(ch0));
         score += value;
@@ -29,14 +33,14 @@ public class UsualFrame extends Frame {
       } else if (ch0 == '-') {
         this.ball1 = new Ball(0, String.valueOf(ch0));
       } else {
-        isValid = true;
+        isValid = false;
         return;
       }
-      Character ch1 = ballStr.charAt(1);
+      Character ch1 = ballsStr.charAt(1);
       if (Character.isDigit(ch1)) {
         score += Integer.parseInt(String.valueOf(ch1));
         if (score > MAX_SCORE) {
-          isValid = true;
+          isValid = false;
           return;
         } else {
           this.ball2 = new Ball(Integer.parseInt(String.valueOf(ch1)), String.valueOf(ch1));
@@ -49,7 +53,7 @@ public class UsualFrame extends Frame {
         } else if (ch1 == '-') {
           this.ball2 = new Ball(0, String.valueOf(ch0));
         } else {
-          isValid = true;
+          isValid = false;
           return;
         }
       }
