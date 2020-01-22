@@ -65,6 +65,7 @@ public class Bowling {
     System.out.println("| indicates a frame boundary");
     System.out.println("The characters after the || indicate bonus balls");
     System.out.println("Example: X|7/|9-|X|-8|8/|-6|X|X|X||81");
+    System.out.println();
   }
 
   public static void main(String[] args) {

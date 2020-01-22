@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/spring-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/java-tests/pom.xml" />
         <option value="$PROJECT_DIR$/scala-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data/pom.xml" />
       </list>
     </option>
   </component>
