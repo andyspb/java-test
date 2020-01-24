@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-webflow" />
+        <module name="spring-ws-soap" />
         <module name="spring-boot" />
         <module name="spring-demo" />
         <module name="spring-mvc" />
         <module name="spring-data" />
-        <module name="producing-web-service" />
         <module name="scala-test" />
         <module name="java-tests" />
         <module name="spring-webflux" />
@@ -20,7 +20,6 @@
     <bytecodeTargetLevel target="8">
       <module name="demoSpringData" target="1.8" />
       <module name="java-tests" target="1.8" />
-      <module name="producing-web-service" target="1.8" />
       <module name="scala-test" target="1.8" />
       <module name="spring-boot" target="1.8" />
       <module name="spring-data" target="1.8" />
@@ -29,12 +28,12 @@
       <module name="spring-webflow" target="1.8" />
       <module name="spring-webflux" target="1.8" />
       <module name="spring-ws" target="1.8" />
+      <module name="spring-ws-soap" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demoSpringData" options="-parameters" />
-      <module name="producing-web-service" options="-parameters" />
       <module name="spring-boot" options="-parameters" />
       <module name="spring-data" options="-parameters" />
       <module name="spring-demo" options="-parameters" />
@@ -42,6 +41,7 @@
       <module name="spring-webflow" options="-parameters" />
       <module name="spring-webflux" options="-parameters" />
       <module name="spring-ws" options="-parameters" />
+      <module name="spring-ws-soap" options="-parameters" />
     </option>
   </component>
 </project>

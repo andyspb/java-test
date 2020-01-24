@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/scala-test/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data/pom.xml" />
         <option value="$PROJECT_DIR$/producing-web-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ws-soap/pom.xml" />
       </list>
     </option>
   </component>

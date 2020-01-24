@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java-tests/java-tests.iml" filepath="$PROJECT_DIR$/java-tests/java-tests.iml" />
-      <module fileurl="file://$PROJECT_DIR$/producing-web-service/producing-web-service.iml" filepath="$PROJECT_DIR$/producing-web-service/producing-web-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala-test/scala-test.iml" filepath="$PROJECT_DIR$/scala-test/scala-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot/spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data/spring-data.iml" filepath="$PROJECT_DIR$/spring-data/spring-data.iml" />
@@ -11,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-webflow/spring-webflow.iml" filepath="$PROJECT_DIR$/spring-webflow/spring-webflow.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-webflux/spring-webflux.iml" filepath="$PROJECT_DIR$/spring-webflux/spring-webflux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-ws-soap/spring-ws-soap.iml" filepath="$PROJECT_DIR$/spring-ws-soap/spring-ws-soap.iml" />
     </modules>
   </component>
 </project>

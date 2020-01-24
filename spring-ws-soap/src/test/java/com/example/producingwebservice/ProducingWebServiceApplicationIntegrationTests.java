@@ -16,7 +16,7 @@
 
 package com.example.producingwebservice;
 
-import io.spring.guides.gs_producing_web_service.GetCountryRequest;
+import io.spring.guides.spring_ws_soap.GetCountryRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
