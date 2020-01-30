@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-webflow" />
+        <module name="spring-webflux" />
         <module name="spring-ws-soap" />
         <module name="spring-boot" />
         <module name="spring-demo" />
@@ -14,7 +14,7 @@
         <module name="spring-data" />
         <module name="scala-test" />
         <module name="java-tests" />
-        <module name="spring-webflux" />
+        <module name="spring-webflow" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -25,7 +25,7 @@
       <module name="spring-data" target="1.8" />
       <module name="spring-demo" target="1.8" />
       <module name="spring-mvc" target="1.8" />
-      <module name="spring-webflow" target="1.8" />
+      <module name="spring-webflow" target="1.6" />
       <module name="spring-webflux" target="1.8" />
       <module name="spring-ws" target="1.8" />
       <module name="spring-ws-soap" target="1.8" />
@@ -38,7 +38,7 @@
       <module name="spring-data" options="-parameters" />
       <module name="spring-demo" options="-parameters" />
       <module name="spring-mvc" options="-parameters" />
-      <module name="spring-webflow" options="-parameters" />
+      <module name="spring-webflow" options="" />
       <module name="spring-webflux" options="-parameters" />
       <module name="spring-ws" options="-parameters" />
       <module name="spring-ws-soap" options="-parameters" />

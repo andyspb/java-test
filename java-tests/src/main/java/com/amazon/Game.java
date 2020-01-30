@@ -33,7 +33,7 @@ public class Game {
         System.out.println("incorrect code.");
     }
   }
-a
+
   private void rotate() {
     System.out.println("rotate");
   }
