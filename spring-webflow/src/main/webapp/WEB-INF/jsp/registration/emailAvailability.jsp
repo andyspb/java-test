@@ -1,3 +1,3 @@
 <div id="emailAvailabilityDiv">
-	${message}
+    ${message}
 </div>
