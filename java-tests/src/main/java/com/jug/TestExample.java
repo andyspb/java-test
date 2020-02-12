@@ -4,6 +4,7 @@ package com.jug;
     priority = TesterInfo.Priority.HIGH,
     createdBy = "AndreyK",
     tags = {"sales", "test"})
+
 public class TestExample {
 
   @Test
