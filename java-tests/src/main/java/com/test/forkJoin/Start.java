@@ -16,6 +16,6 @@ public class Start {
     forkJoinPool.invoke(test);
     Long endT = System.nanoTime();
     Long timebetweenStartEnd = endT - beginT;
-    System.out.println("=====time========" + timebetweenStartEnd);
+    LOGGER.info("=====time========" + timebetweenStartEnd);
   }
 }
