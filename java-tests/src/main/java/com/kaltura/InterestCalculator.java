@@ -5,52 +5,68 @@ public class InterestCalculator {
 //  4.	Write an interest calculator that accepts an initial deposit sum, interest rate (annual),
 //  optional yearly additional contribution and the number of years to calculate and returns the
 //  total balance, total contribution and total interest. You can use any language you want, i
-//  ncluding pseudo code.
+//  including pseudo code.
 
-  public static Return interestCalculator(float depositSum, float interestRate,
-                                          float yearlyAddContribution, int years) {
-    Return ret = new Return();
+  public static String interestCalculator(float depositSum, float interestRate,
+                                          float yearlyContribution, int years) {
+    StringBuffer sb = new StringBuffer();
 
-    float totalAmount = 0;
-    float totalBalance = depositSum;
-    float totalContribution = 0;
-    float totalInterest = 0;
-    for (int i = 1; i <= years; ++i ){
-      System.out.println("Year: " + i);
-
+    float totalBalance = depositSum, totalContribution = 0, totalInterest = 0;
+    for (int i = 1; i <= years; ++i) {
+      float currentBalance = totalBalance;
       float yearlyRate = totalBalance * interestRate / 100;
-      System.out.println("yearlyInterestPaid:"+yearlyRate);
       totalBalance += yearlyRate;
-      if (yearlyAddContribution > 0) {
-        totalBalance += totalBalance;
-        totalContribution += totalContribution;
+      totalInterest += yearlyRate;
+      if (yearlyContribution > 0) {
+        totalBalance += yearlyContribution;
+        totalContribution += yearlyContribution;
       }
-
-      System.out.println("depositSum: " + depositSum );
-      System.out.println("principal:" + totalBalance);
-      System.out.println("totalAmount:" + totalAmount);
-
-      System.out.println("----------------");
     }
+    sb.append("totalBalance:").append(totalBalance).append(",");
+    sb.append("totalContribution:").append(totalContribution).append(",");
+    sb.append("totalInterest:").append(totalInterest).append("");
 
-    return ret;
+    return sb.toString();
   }
-
 
 
   public static void main(String[] args) {
-    //
     float depositSum = 2000;
     float interest = 6;
     int years = 3;
-    Return ret = interestCalculator(depositSum, interest, 0, years);
+    float addContribution = 100;
+    String ret = interestCalculator(depositSum, interest, addContribution, years);
+    System.out.println(ret);
   }
 }
 
-class Return {
-  public float totalBalance;
-  public float totalContribution;
-  public float totalInterest;
-
-}
-
+//  public static String interestCalculator(float depositSum, float interestRate,
+//                                          float yearlyContribution, int years) {
+//    StringBuffer sb = new StringBuffer();
+//
+//    float totalBalance = depositSum, totalContribution = 0, totalInterest = 0;
+//    for (int i = 1; i <= years; ++i) {
+//      float currentBalance = totalBalance;
+//      float yearlyRate = totalBalance * interestRate / 100;
+//      System.out.print( "currentBalance:" + currentBalance + " yearlyInterestPaid:" + yearlyRate + " yearlyAddContribution:" + yearlyContribution);
+//      System.out.println("");
+//      totalBalance += yearlyRate;
+//      totalInterest += yearlyRate;
+//      if (yearlyContribution > 0) {
+//        totalBalance += yearlyContribution;
+//        totalContribution += yearlyContribution;
+//      }
+//
+//      System.out.print(" totalBalance:" + totalBalance);
+//      System.out.print(" totalInterest:" + totalInterest);
+//      System.out.print(" yearlyContribution:" + yearlyContribution);
+//      System.out.print(" totalContribution:" + totalContribution);
+//      System.out.println();
+//      System.out.println("----------------");
+//    }
+//    sb.append("totalBalance:").append(totalBalance).append(",");
+//    sb.append("totalContribution:").append(totalContribution).append(",");
+//    sb.append("totalInterest:").append(totalInterest).append("");
+//
+//    return sb.toString();
+//  }
