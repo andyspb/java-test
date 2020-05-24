@@ -1,13 +1,13 @@
 package com.high5games;
 
-public class BonusFrame extends Frame {
+class BonusFrame extends Frame {
 
   public BonusFrame(String ballStr) {
     super(ballStr);
   }
 
   @Override
-  void initBall(String ballStr) {
+  void addBalls(String ballStr) {
     if (ballStr == null || ballStr.length() == 0 || frameStr.length() > 2) {
       isValid = false;
       return;
@@ -20,7 +20,7 @@ public class BonusFrame extends Frame {
         this.ball1 = new Ball(MAX_SCORE, ballStr);
         this.ball2 = this.ball1;
       } else {
-        isValid = true;
+        isValid = false;
         return;
       }
     } else if (ballStr.length() == 2) {

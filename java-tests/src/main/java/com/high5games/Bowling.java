@@ -32,32 +32,53 @@ package com.high5games;
 //    X|7/|9-|X|-8|8/|-6|X|X|X||81
 //    Total score == 167
 
+import java.util.Scanner;
+
 public class Bowling {
 
-  public static void main(String[] args) {
-    String[] gameStrs =
+  private static void runExamples() {
+    System.out.println("Examples for games:");
+    String[] examples =
         new String[] {
           "X|X|X|X|X|X|X|X|X|X||XX", // ->330
           "9-|9-|9-|9-|9-|9-|9-|9-|9-|9-||", // ->90
           "5/|5/|5/|5/|5/|5/|5/|5/|5/|5/||5", // 150
           "X|7/|9-|X|-8|8/|-6|X|X|X||81", // ->167
         };
-
-    for (String gameStr : gameStrs) {
-      String[] sGame = gameStr.split("\\|\\|");
-      if (sGame.length < 1 || sGame.length > 2) {
-        System.out.println("An invalid game :" + gameStr);
-        System.exit(0);
-      }
-      Game game = new Game(sGame[0]);
-      if (sGame.length > 1 && sGame[1].length() > 0) game.addBonusFrame(sGame[1]);
-
-      if (game.isValid()) {
-        int score = game.score();
-        System.out.println("A score for the game:" + gameStr + " is:" + score);
+    for (String example : examples) {
+      Game game = Game.build(example);
+      if (game != null) {
+        System.out.println("A score for the game:" + example + " is:" + game.getScore());
       } else {
-        System.out.println("An invalid game :" + gameStr);
+        System.out.println("The invalid game :" + example);
       }
+    }
+  }
+
+  private static void printHelpMessage() {
+    System.out.println("Please enter a game that consists of ten frames and a bonus game");
+    System.out.println("PEach frame consists of two balls, except a strike");
+    System.out.println("A digit indicates one ball");
+    System.out.println("X indicates a strike");
+    System.out.println("/ indicates a spare");
+    System.out.println("- indicates a miss");
+    System.out.println("| indicates a frame boundary");
+    System.out.println("The characters after the || indicate bonus balls");
+    System.out.println("Example: X|7/|9-|X|-8|8/|-6|X|X|X||81");
+    System.out.println();
+  }
+
+  public static void main(String[] args) {
+    printHelpMessage();
+    Scanner scanner = new Scanner(System.in);
+    String str = scanner.next();
+    scanner.close();
+    Game game = Game.build(str);
+    if (game != null) {
+      System.out.println("A score for the game:" + str + " is:" + game.getScore());
+    } else {
+      System.out.println("The invalid game :" + str);
+      runExamples();
     }
   }
 }

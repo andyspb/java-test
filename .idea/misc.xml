@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-security" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-webflow" />
     <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
@@ -14,6 +16,11 @@
         <option value="$PROJECT_DIR$/spring-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/java-tests/pom.xml" />
         <option value="$PROJECT_DIR$/scala-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data/pom.xml" />
+        <option value="$PROJECT_DIR$/producing-web-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ws-soap/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data-jpa/pom.xml" />
       </list>
     </option>
   </component>
