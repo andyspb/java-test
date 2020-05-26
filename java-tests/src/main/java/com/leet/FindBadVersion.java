@@ -1,15 +1,16 @@
 package com.leet;
 
 class VersionControl {
-  boolean isBadVersion(int version)  {
+  boolean isBadVersion(int version) {
     return version >= 4;
   }
 }
-public class FindBadVersion extends VersionControl {
-//Given n = 5, and version = 4 is the first bad version.
-  public int firstBadVersion(int n) {
-    for(int i=n; n>=90)
 
+public class FindBadVersion extends VersionControl {
+  // Given n = 5, and version = 4 is the first bad version.
+  public int firstBadVersion(int i) {
+    System.out.println(i);
+    return i;
   }
 
   public static void main(String[] args) {
