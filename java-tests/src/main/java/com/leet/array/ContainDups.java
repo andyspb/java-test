@@ -22,6 +22,6 @@ public class ContainDups {
     ContainDups cd = new ContainDups();
     int[] nums = new int[] {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
     boolean containDups = cd.containsDuplicate(nums);
-    System.out.println(containDups);
+    System.out.println("ContainDups:" + containDups);
   }
 }
