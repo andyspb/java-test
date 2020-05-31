@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/afl-parent.iml" filepath="$PROJECT_DIR$/afl-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-tests/java-tests.iml" filepath="$PROJECT_DIR$/java-tests/java-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/jax-rs/jax-rs.iml" filepath="$PROJECT_DIR$/jax-rs/jax-rs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala-test/scala-test.iml" filepath="$PROJECT_DIR$/scala-test/scala-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot/spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data/spring-data.iml" filepath="$PROJECT_DIR$/spring-data/spring-data.iml" />
