@@ -30,7 +30,7 @@ public class Test1{
 
   public static void main(String[] args) {
     //
-    String test = "HEllo, world!";
+    String test = "Hello, world!";
     System.out.println(findCharNumRec(test,'o'));
     System.out.println(findCharNumIter(test,'o'));
     System.out.println(findCharNumStream(test,'o'));

@@ -16,17 +16,17 @@ public class FirstNonRepeated {
   }
 
   public static Character firstNonRepeatedCharacter(String str) {
-    Character c;
+    Character ch;
     HashMap<Character, Integer> map = new HashMap<Character, Integer>();
     final int len = str.length();
     for (int i = 0; i < len; ++i) {
-      c = str.charAt(i);
-      map.put(c, map.containsKey(c) ? map.get(c) + 1 : 1);
+      ch = str.charAt(i);
+      map.put(ch, map.containsKey(ch) ? map.get(ch) + 1 : 1);
     }
     for (int i = 0; i < len; ++i) {
-      c = str.charAt(i);
-      if (map.get(c) == 1) {
-        return c;
+      ch = str.charAt(i);
+      if (map.get(ch) == 1) {
+        return ch;
       }
     }
     return null;
