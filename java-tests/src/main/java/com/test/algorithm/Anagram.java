@@ -19,7 +19,7 @@ public abstract class Anagram {
   }
 
   public static void main(String[] args) {
-    log.log(Level.INFO, ">>>");
+    log.log(Level.INFO, "Anagram::main() >>>");
 
     String s1 = "aabb";
     String s2 = "abab";
@@ -29,7 +29,5 @@ public abstract class Anagram {
         Level.INFO, "Is anagrams(" + s1 + ", " + s2 + ") :" + Boolean.toString(isAnagram(s1, s2)));
     log.log(
         Level.INFO, "Is anagrams(" + s1 + ", " + s3 + ") :" + Boolean.toString(isAnagram(s1, s3)));
-
-    log.log(Level.INFO, ">>>");
   }
 }
