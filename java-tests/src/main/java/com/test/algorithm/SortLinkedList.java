@@ -8,8 +8,7 @@ public class SortLinkedList {
     int[] arr = {54, 12, 2, 1, 15, 4, 10};
 
     Node head = null;
-    for (int i = 0; i < arr.length
-        ; i++) {
+    for (int i = 0; i < arr.length; i++) {
       head = new Node(arr[i], head);
     }
 

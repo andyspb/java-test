@@ -10,16 +10,16 @@
 
     <modules>
         <module>java-tests</module>
-        <module>jax-rs</module>
-        <module>scala-test</module>
-        <module>spring-boot</module>
-        <module>spring-data</module>
-        <module>spring-data-jpa</module>
-        <module>spring-demo</module>
-        <module>spring-mvc</module>
-        <module>spring-security</module>
-        <module>spring-webflow</module>
-        <module>spring-webflux</module>
-        <module>spring-ws-soap</module>
+<!--        <module>jax-rs</module>-->
+<!--        <module>scala-test</module>-->
+<!--        <module>spring-boot</module>-->
+<!--        <module>spring-data</module>-->
+<!--        <module>spring-data-jpa</module>-->
+<!--        <module>spring-demo</module>-->
+<!--        <module>spring-mvc</module>-->
+<!--        <module>spring-security</module>-->
+<!--        <module>spring-webflow</module>-->
+<!--        <module>spring-webflux</module>-->
+<!--        <module>spring-ws-soap</module>-->
     </modules>
 </project>

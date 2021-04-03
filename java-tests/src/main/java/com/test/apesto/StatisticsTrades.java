@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class StatisticsTrades {
-  /** Класс для запоминания макимального количества сделок на каждой бирже */
   class DescriptorAnswer {
     private String exchange;
     private String startSecond;
@@ -41,9 +40,7 @@ public class StatisticsTrades {
   }
 
   /**
-   * Информация по всем биржам
    *
-   * @param key - биржа
    * @param Trade {@link Trade}
    */
   private Map<String, List<Trade>> trades;
@@ -56,18 +53,14 @@ public class StatisticsTrades {
   }
 
   /**
-   * Метод для определения количества бирж
    *
-   * @return возвращает общее количесвто бирж
    */
   public int getCountExchange() {
     return trades.size();
   }
 
   /**
-   * Метод для чтения из файла
    *
-   * @param path полный путь к файлу
    */
   private void readFromCSV(Path path) throws IOException, ParseException {
     format.setTimeZone(TimeZone.getTimeZone("GMT"));
@@ -76,7 +69,6 @@ public class StatisticsTrades {
       while ((line = reader.readLine()) != null) {
         String[] data = line.split(",");
 
-        // время от начала суток 00:00:00.000 в милисекундах
         long time = format.parse(data[0].trim()).getTime();
         double price = Double.parseDouble(data[1]);
         int share = Integer.parseInt(data[2]);
@@ -100,10 +92,7 @@ public class StatisticsTrades {
   }
 
   /**
-   * Главый метод для запуска обработки
    *
-   * @param path полный путь к файлу
-   * @return возвращает статистику по каждой бирже, где есть окно длительностью РОВНО 1 секунда
    */
   public List<DescriptorAnswer> execute(Path path) throws IOException, ParseException {
     readFromCSV(path);

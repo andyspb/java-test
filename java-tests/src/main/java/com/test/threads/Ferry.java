@@ -4,8 +4,6 @@ import java.util.concurrent.CyclicBarrier;
 
 public class Ferry {
   private static final CyclicBarrier BARRIER = new CyclicBarrier(3, new FerryBoat());
-  //Инициализируем барьер на три потока и таском, который будет выполняться, когда
-  //у барьера соберется три потока. После этого, они будут освобождены.
 
   public static void main(String[] args) throws InterruptedException {
     for (int i = 0; i < 9; i++) {

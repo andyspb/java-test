@@ -8,7 +8,7 @@ public class SelectionSort {
     System.out.println();
   }
 
-  public static void sort(int[] arr) {
+  public static void selectionSort(int[] arr) {
     for (int i = 0; i < arr.length - 1; ++i) {
       int least = i;
       for (int j = i + 1; j < arr.length; ++j) {
@@ -27,7 +27,7 @@ public class SelectionSort {
     int arr[] = {64, 25, 12, 22, 11};
     System.out.println("Unsorted array");
     ob.printArray(arr);
-    ob.sort(arr);
+    ob.selectionSort(arr);
     System.out.println("Sorted array");
     ob.printArray(arr);
   }
