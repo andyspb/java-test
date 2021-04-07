@@ -1,23 +1,19 @@
 package com.gd;
 
-public class GFG2 {
+public class TwoSum3 {
 
   // Funtion to print pairs
-  static void printPairs(int a[], int n, int x)
-  {
+  static void printPairs(int a[], int n, int x) {
     int i;
-    int []rem = new int[x];
-    for (i = 0; i < x; i++)
-    {
+    int[] rem = new int[x];
+    for (i = 0; i < x; i++) {
 
       // initializing the rem
       // values with 0's.
       rem[i] = 0;
     }
-    for (i = 0; i < n; i++)
-    {
-      if (a[i] < x)
-      {
+    for (i = 0; i < n; i++) {
+      if (a[i] < x) {
 
         // Perform the remainder
         // operation only if the
@@ -32,10 +28,8 @@ public class GFG2 {
     // Traversing the remainder list
     // from start to middle to
     // find pairs
-    for (i = 1; i < x / 2; i++)
-    {
-      if (rem[i] > 0 && rem[x - i] > 0)
-      {
+    for (i = 1; i < x / 2; i++) {
+      if (rem[i] > 0 && rem[x - i] > 0) {
 
         // The elements with remainders
         // i and x-i will
@@ -44,8 +38,7 @@ public class GFG2 {
         // elements which add up to x ,
         // we print x and
         // break.
-        System.out.print("Yes"
-            + "\n");
+        System.out.print("Yes" + "\n");
         break;
       }
     }
@@ -53,12 +46,9 @@ public class GFG2 {
     // Once we reach middle of
     // remainder array, we have to
     // do operations based on x.
-    if (i >= x / 2)
-    {
-      if (x % 2 == 0)
-      {
-        if (rem[x / 2] > 1)
-        {
+    if (i >= x / 2) {
+      if (x % 2 == 0) {
+        if (rem[x / 2] > 1) {
 
           // if x is even and
           // we have more than 1
@@ -67,42 +57,29 @@ public class GFG2 {
           // have two distinct elements
           // which add up
           // to x. if we dont have
-          //more than 1
+          // more than 1
           // element, print "No".
-          System.out.print("Yes"
-              + "\n");
+          System.out.print("Yes" + "\n");
+        } else {
+          System.out.print("No" + "\n");
         }
-        else
-        {
-          System.out.print("No"
-              + "\n");
-        }
-      }
-      else
-      {
+      } else {
 
         // When x is odd we continue
         // the same process
         // which we did in previous loop.
-        if (rem[x / 2] > 0 &&
-            rem[x - x / 2] > 0)
-        {
-          System.out.print("Yes"
-              + "\n");
-        }
-        else
-        {
-          System.out.print("No"
-              + "\n");
+        if (rem[x / 2] > 0 && rem[x - x / 2] > 0) {
+          System.out.print("Yes" + "\n");
+        } else {
+          System.out.print("No" + "\n");
         }
       }
     }
   }
 
   /* Driver Code */
-  public static void main(String[] args)
-  {
-    int A[] = { 1, 4, 45, 6, 10, 8 };
+  public static void main(String[] args) {
+    int A[] = {1, 4, 45, 6, 10, 8};
     int n = 16;
     int arr_size = A.length;
 

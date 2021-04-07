@@ -1,5 +1,6 @@
 package com.gd;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 class PairSum {
@@ -23,8 +24,10 @@ class PairSum {
   // Driver Code
   public static void main(String[] args)
   {
-    int A[] = { 1, 4, 45, 6, 10, 8, 11, 5, 6, 5 };
-    int n = 16;
-    printpairs(A, n);
+    int array[] = { 1, 4, 45, 6, 10, 8, 11, 5, 6, 5 };
+    int target = 16;
+    System.out.println(Arrays.toString(array));
+    System.out.println("target: " + target);
+    printpairs(array, target);
   }
 }

@@ -1,9 +1,10 @@
 package com.gd;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSumLc {
+public class TwoSum4 {
 
   // Approach 1: Brute Force
   public int[] twoSum(int[] nums, int target) {
@@ -45,4 +46,19 @@ public class TwoSumLc {
     }
     throw new IllegalArgumentException("No two sum solution");
   }
+
+  public static void main(String[] args) {
+    int[] nums = new int[] {2, 7, 11, 15};
+    int target = 22;
+    System.out.println(Arrays.toString(nums));
+    System.out.println("target: " + target);
+    TwoSum4 ts = new TwoSum4();
+    System.out.println(
+        "TwoSum for target: " + target + " : " + Arrays.toString(ts.twoSum(nums, target)));
+    System.out.println(
+        "TwoSum for target: " + target + " : " + Arrays.toString(ts.twoSum2(nums, target)));
+    System.out.println(
+        "TwoSum for target: " + target + " : " + Arrays.toString(ts.twoSum3(nums, target)));
+  }
+
 }
